@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
+
+    <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet" />
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="style/blogstyle.css" />
+
+    <!-- Javascript Bootstrap -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+
+    <!--JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md position-fixed fixed-top" id="nav">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="https://i.ibb.co/85FSWpt/AH-GYM.png" alt="AH-GYM" border="0" /></a>
+        <i class="fas fa-bars navbar-toggler" id="bar" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation"></i>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav mb-2 mb-lg-0 justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item position-relative">
+              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Program</a>
+              <ul class="dropdown-menu position-absolute m-0">
+                <li>
+                  <a class="dropdown-item" href="kelas.html">Kelas</a>
+                  <div class="border-bawah"></div>
+                </li>
+                <li><a class="dropdown-item" href="course.html">Personal</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="toko.html">Produk</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active border-bawah" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="galeri.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aboutus.html">About Us</a>
+            </li>
+            <li class="nav-item"><a class="btn" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Daftar</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Akhir Navbar -->
+
+    <!-- Utama -->
+    <div class="container mt-3">
+      <div class="d-flex justify-content-between align-items-center konten-utama">
+        <div class="flex-item utama-gambar besar">
+          <div class="ket">
+            <h2>Tips Gym untuk Pemula agar Maksimal</h2>
+            <p>
+              Nah, biasanya seorang pemula dalam dunia fitnes akan merasakan bingung harus mulai dari mana, apa yang harus dilakukan, serta teknik apa saja yang perlu dikuasai. Hal itu adalah wajar, sebab bagaimanapun juga pemula
+              membutuhkan penyesuaian terlebih dahulu beberapa saat sampai akhirnya terbiasa.
+            </p>
+          </div>
+        </div>
+        <div class="flex-item utama-gambar kecil">
+          <div class="flex-item satu" id="">
+            <div class="ket-sub satu">
+              <h5>Cara Ampuh Bangun oto tanpa Diet</h5>
+              <p>Cara membentuk otot dengan cepat adalah dengan latihan yang keras. Jangan ragukan hal itu. Tapi, ada beberapa aspek lain yang juga harus Anda lakukan untuk membangun otot.</p>
+            </div>
+          </div>
+          <div class="flex-item dua">
+            <div class="ket-sub dua">
+              <h5>Cara Cepat Memulai Olahraga setelah Cedera</h5>
+              <p>Cedera bisa menimpa siapa saja dan kapan saja, tua maupun muda. Karena rasa sakit yang dialami ketika cedera, hal ini dapat mengganggu dalam melakukan kegiatan sehari-hari, terutama ketika berolahraga.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Akhir Utama -->
+
+    <!-- Artikel Terbaru -->
+    <div class="container mt-5 mb-5">
+      <h3 class="judul">Artikel Terbaru</h3>
+      <div class="d-flex justify-content-around flex-wrap">
+        <div class="flex-item artikel border">
+          <div class="gambar-artikel">
+            <img src="https://i.ibb.co/Wym4BBm/diet-gagal.jpg" alt="diet-gagal" border="0" />
+          </div>
+          <div class="data-artikel">
+            <h5>5 Kesalahan yang Dapat Membuat Diet Anda Gagal</h5>
+            <p>Jika Anda ingin mengurangi berat badan dan mempertahankannya, kunci keberhasilannya adalah membuat perubahan hidup yang kecil dan permanen yang dilakukan secara konsisten.</p>
+          </div>
+        </div>
+        <div class="flex-item artikel border">
+          <div class="gambar-artikel">
+            <img src="https://i.ibb.co/SmyJ9Pg/yoga12.jpg" alt="yoga12" border="0" />
+          </div>
+          <div class="data-artikel">
+            <h5>Penting Pemanasan Sebelum Nge-Gym</h5>
+            <p>Penting hukumnya untuk melakukan pemanasan sebelum olahraga. Ya, meski hanya olahraga catur. Gerakan pemanasan yang benar akan membuat Anda mampu bergerak.</p>
+          </div>
+        </div>
+        <div class="flex-item artikel border">
+          <div class="gambar-artikel">
+            <img src="https://i.ibb.co/VV0373f/pemanasan.jpg" alt="pemanasan" border="0" />
+          </div>
+          <div class="data-artikel">
+            <h5>9 Alasan Kenapa Pria Harus Beryoga</h5>
+            <p>
+              Saat ini yoga mungkin sudah bukan kata asing ketika membicarakan tentang olah tubuh. Sebagai olah tubuh atau fisik yoga sudah menjadi salah satu menu utama di banyak pusat kebugaran, bahkan studio-studio khusus yoga banyak
+              bermunculan di beberapa kota
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Akhir Artikel Terbaru -->
+
+      <!-- Artikel Lainnya -->
+      <div class="flex-row mt-5">
+        <h3 class="judul">Artikel Lainnya</h3>
+        <div class="d-flex">
+          <div class="flex-item">
+            <div class="d-flex flex-column border bg-light p-3">
+              <div class="flex-item mr-5">
+                <div class="d-flex daftar-artikel pb-3">
+                  <div class="flex-item gambar-daftar-artikel">
+                    <img src="https://i.ibb.co/Gp3HWzs/terhindar-ciera.jpg" alt="terhindar-ciera" border="0" />
+                  </div>
+                  <div class="flex-item">
+                    <h4>Tips Agar Terhindar Cedera saat Berolahraga</h4>
+                    <p>Cedera adalah bagian tak terpisahkan dari kehidupan atlet profesional. Latihan mereka yang sangat intensif kadang membawa mereka pada resiko kesleo, otot tertarik atau cedera lainnya.</p>
+                    <div class="text-end baca">
+                      <a href="#">Baca</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex-item mt-4 mr-5 bg-light">
+                <div class="d-flex daftar-artikel pb-3">
+                  <div class="flex-item gambar-daftar-artikel">
+                    <img src="https://i.ibb.co/cXPHwhW/tempat-gym.jpg" alt="tempat-gym" border="0" />
+                  </div>
+                  <div class="flex-item">
+                    <h4>Tips Jitu Memilih Tempat Nge-Gym</h4>
+                    <p>
+                      Mencari tempat fitness/gym sangat lah sulit. Kecuali Anda memiliki rekomendasi dari teman atau sahabat. Sebuah gym yang baik harus memiliki standart kebutuhan para membernya, dan tentu dapat memotivasi para member
+                      untuk datang kembali dan berolahraga secara teratur.
+                    </p>
+                    <div class="text-end baca">
+                      <a href="#">Baca</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex-item mt-4 mr-5 bg-light">
+                <div class="d-flex daftar-artikel pb-3 position-relative">
+                  <div class="flex-item gambar-daftar-artikel">
+                    <img src="https://i.ibb.co/S07D6k7/gym-corona.jpg" alt="gym-corona" border="0" />
+                  </div>
+                  <div class="flex-item">
+                    <h4>Tips Aman Nge-Gym Saat Pandemi</h4>
+                    <p>
+                      Era new normal tentu merubah aktivitas masyarakat ketika berada di luar rumah, termasuk ketika berolahraga di gym. Tak seperti sebelumnya, kamu kini perlu menerapkan protokol kesehatan saat ingin berkegiatan di gym
+                    </p>
+                    <div class="text-end baca">
+                      <a href="#">Baca</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex-item mt-4 mr-5 bg-light">
+                <div class="d-flex daftar-artikel pb-3">
+                  <div class="flex-item gambar-daftar-artikel">
+                    <img src="https://i.ibb.co/28GbSLd/merawat-alat.jpg" alt="merawat-alat" border="0" />
+                  </div>
+                  <div class="flex-item">
+                    <h4>Pentingnya Merawat Alat Gym</h4>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius fuga consequatur nostrum. Nam molestiae temporibus inventore! Enim, reprehenderit. Consectetur, saepe!</p>
+                    <div class="text-end baca">
+                      <a href="#">Baca</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Daftar Artikel -->
+          <div class="flex-item w-75 lainnya">
+            <h3>Daftar Artikel</h3>
+            <ul class="artikel-lainnya">
+              <li>7 Protokol Keseatan Saat Berolahraga di Gym</li>
+              <li>5 Langkah Agar Nge-Gym Dirumah Terasa Nyaman</li>
+              <li>Latihan Gym yang Cocok Saat Berpuasa</li>
+              <li>6 Kesalahan yang Dilakukan Saat Nge-Gym</li>
+              <li>Hidup Sehat dengan Olahraga</li>
+              <li>6 Gerakan Fitness yang Bisa Dilakukan Dirumah</li>
+            </ul>
+          </div>
+          <!-- Daftar Artikel -->
+        </div>
+      </div>
+    </div>
+    <!-- Akhir Artikel Lainnya -->
+
+    <!-- Footer -->
+    <footer class="page-footer mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-sm-2" data-aos="fade-up" data-aos-duration="400">
+            <h3 class="text-uppercase font-weightbold">A&H Gym</h3>
+          </div>
+          <div class="col-lg-2 col-sm-12" data-aos="fade-up" data-aos-duration="800">
+            <h6 class="text-uppercase font-weight-bold">Program</h6>
+            <p>
+              Personal Training <br />Group <br />Yoga <br />
+              Zumba <br />
+              Cardio
+            </p>
+          </div>
+          <div class="col-lg-3 col-sm-12" data-aos="fade-up" data-aos-duration="1200">
+            <h6 class="text-uppercase font-weight-bold">Contact</h6>
+            <p>Pabelan, Colomadu, Karanganyar<br />ah77@gmail.com <br />0271 8888 6666<br />0857 1234 4321</p>
+          </div>
+          <div class="col-lg-4 col-md-10 col-sm-12 sosial-media" data-aos="fade-up" data-aos-duration="1600">
+            <ul>
+              <li>
+                <a href="https://www.instagram.com/uns.official/"><i class="fab fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="https://twitter.com/maret_sebelas"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/UNSOfficial"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+              </li>
+              <li>
+                <a href="mailto:someone@yoursite.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/channel/UCy-IuqRriMA9hCFoLkI2Ekg"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <p class="text-center">Copyright ©2021 All rights reserved | This template is made by M. Aqil Sadik (K3520046) & Nur Isnaini H. (K3520058)</p>
+        </div>
+      </div>
+    </footer>
+    <!-- Akhir Footer -->
+
+    <script src="jquery/script.js"></script>
+  </body>
+</html>

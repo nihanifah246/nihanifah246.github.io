@@ -1,0 +1,600 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Lato:wght@300&display=swap");
+
+body {
+  margin: 0px;
+  padding: 0;
+}
+
+.container {
+  /* margin-top: 100px;
+  border: #bacb4d solid 2px; */
+  padding: 50px 0 50px 0;
+  /* border: yellow solid 2px; */
+}
+
+/* Navbar */
+.navbar .top {
+  top: 0px;
+}
+
+.container-fluid .fas {
+  color: white;
+}
+
+#nav {
+  height: 90px;
+  z-index: 4;
+  font-size: 16px;
+  width: 100%;
+}
+
+#nav.scrolled {
+  background-color: #222 !important;
+  transition: background-color 200ms linear;
+  color: aliceblue;
+}
+
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+.navbar-brand img {
+  width: 3%;
+  top: 20px;
+  left: 100px;
+  position: absolute;
+}
+
+.nav-link.active {
+  border-bottom: #bacb4d solid 2px;
+  color: #bacb4d;
+}
+
+.nav-link {
+  margin-right: 1em !important;
+  color: white;
+  font-weight: bold;
+}
+
+.nav-link.dropdown {
+  color: white;
+}
+
+#nyala {
+  color: #bacb4d;
+}
+
+.nav-link:hover {
+  color: #bacb4d;
+  border-bottom: #bacb4d solid 2px;
+}
+
+.dropdown-menu {
+  background-color: #222;
+}
+
+.dropdown-item {
+  color: white;
+}
+
+.dropdown-item:hover {
+  border-bottom: #bacb4d solid 2px;
+  background-color: rgb(231, 193, 193, 0);
+  color: #bacb4d;
+}
+
+.nav-link.dropdown-toggle {
+  color: white;
+}
+.nav-link.dropdown-toggle:hover {
+  color: #222;
+}
+.dropdown-toggle.show {
+  color: white;
+}
+
+.btn {
+  background-color: #bacb4d;
+  border-radius: 0;
+  font-weight: 500;
+  color: white;
+  font-weight: bold;
+}
+
+#navbarTogglerDemo02 {
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.nav-item .dropdown-toggle.active {
+  background-color: rgb(255, 255, 255, 0);
+  color: white;
+}
+.dropdown-item.active {
+  background-color: rgb(255, 255, 255, 0);
+  color: white;
+  border-bottom: #bacb4d solid 2px;
+}
+/* Akhir Navbar */
+
+/* Tab Kelas */
+.nav-item .tab-kelas {
+  background-color: #bacb4d;
+  border-radius: 0;
+  font-weight: normal;
+}
+.nav-item .tab-kelas:hover {
+  color: #222;
+  border-bottom: #222 solid 1px;
+}
+
+.nav-item .tab-kelas.active {
+  background-color: #222;
+}
+/* Akhir Tab Kelas */
+
+/* Modal */
+form input {
+  margin: 10px;
+  border: 0;
+  border-bottom: #222 solid 0.5px;
+}
+
+form button {
+  width: 100%;
+  border: 0;
+  height: 40px;
+  background-color: #222;
+  color: white;
+  margin: 20px 0 0 0;
+}
+
+.form-panjang {
+  width: 90%;
+}
+
+.punya-akun:hover {
+  cursor: pointer;
+  color: #666;
+}
+
+/* .modal-dialog {
+  display: block;
+} */
+
+.modal-content {
+  display: block;
+  border-radius: 0;
+}
+/* Akhir Modal */
+
+/* Background */
+.background img {
+  width: 100%;
+}
+
+.judul-konten {
+  color: white;
+}
+
+.judul-konten h1 {
+  font-family: "Bangers", cursive;
+  font-size: 50px;
+  letter-spacing: 10px;
+}
+/* Akhir Background */
+
+/* Tab Menu */
+
+.nav-item .nav-link.tab {
+  color: #222;
+}
+
+.nav-item .nav-link.tab.active {
+  background-color: #222;
+  border-radius: 0;
+  color: #bacb4d;
+}
+
+/* Akhir Tab menu */
+
+/* Our Trainer */
+.trainer {
+  padding: 0;
+  position: relative;
+  margin-bottom: 100px;
+  top: 20px;
+  transition: 0.5s ease-in-out;
+  /* overflow: hidden; */
+  box-sizing: border-box;
+  margin: 10px;
+  /* border: #bacb4d solid 2px; */
+}
+
+.gambartrainer {
+  height: 100%;
+  z-index: 0;
+}
+
+.trainer:hover {
+  background-color: #bacb4d;
+  /* border: #222 solid 4px; */
+  cursor: pointer;
+}
+
+.gambartrainer img {
+  width: 100%;
+}
+
+.data-trainer {
+  color: #bacb4d;
+  position: absolute;
+  background-color: #222;
+  bottom: 0px;
+  height: 90px;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  padding-top: 15px;
+}
+
+/* Akhir Trainer */
+
+/* Harga */
+.harga {
+  background: #bacb4d;
+  box-sizing: border-box;
+  /* height: 430px;
+  width: 30%; */
+  color: white;
+  transition: 0.3s ease-in-out;
+  margin: 10px;
+  height: 400px;
+}
+
+.harga:hover {
+  background-color: #222;
+  color: #bacb4d;
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.harga ul {
+  list-style: none;
+  padding: 0;
+  line-height: 40px;
+}
+
+.harga h3 {
+  font-weight: bold;
+  /* color: #222; */
+}
+
+/* Akhir Harga */
+
+.judul {
+  color: #222;
+  font-family: "Bangers", cursive;
+}
+
+.alasan .fas {
+  font-size: 50px;
+  color: #bacb4d;
+}
+
+.alasan h4 {
+  color: #bacb4d;
+}
+
+/* Kelas Populer */
+#klub {
+  padding: 0;
+  width: 350px;
+  height: 200px;
+  overflow: hidden;
+  border: solid 2px black;
+}
+
+#klub img {
+  width: auto;
+  filter: brightness(70%);
+  width: 100%;
+}
+
+#klub:hover {
+  cursor: pointer;
+}
+
+.judul-yoga {
+  top: 0px;
+  height: 200px;
+  width: 100%;
+}
+.judul-klub {
+  bottom: -40px;
+  width: 100%;
+  color: white;
+  transition: 0.5s;
+}
+
+.judul-klub h4 {
+  color: white;
+  font-weight: bold;
+}
+#klub:hover .judul-yoga {
+  background-color: #bacb4d;
+  opacity: 0.3;
+}
+#klub:hover .judul-klub {
+  bottom: 50px;
+}
+
+.position-absolute.judul-yoga {
+  bottom: 10px;
+  color: white;
+  line-height: 10px;
+}
+/* Akhir Kelas Populer */
+
+/* Footer */
+.page-footer {
+  background-color: #222;
+  color: #ccc;
+  padding: 0px;
+}
+.footer-copyright {
+  color: #666;
+  padding: 0;
+}
+
+.program {
+  list-style: none;
+  padding: 0;
+}
+
+.sosial-media {
+  /* border: white solid 2px; */
+  box-sizing: border-box;
+}
+
+.sosial-media ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sosial-media ul li a {
+  color: white;
+}
+
+.sosial-media ul li {
+  float: left;
+  font-size: 30px;
+  margin: 15px;
+  list-style: none;
+}
+/* Akhir Footer */
+
+/* Responsive */
+
+@media only screen and (max-width: 993px) {
+  /* Our Trainer */
+  .trainer {
+    width: 30%;
+  }
+
+  .gambartrainer {
+    height: 100%;
+    z-index: 0;
+  }
+
+  .trainer:hover {
+    background-color: #bacb4d;
+    /* border: #222 solid 4px; */
+    cursor: pointer;
+  }
+
+  .gambartrainer img {
+    width: 100%;
+  }
+
+  .data-trainer {
+    color: #bacb4d;
+    position: absolute;
+    background-color: #222;
+    bottom: 0px;
+    height: 60px;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    padding-top: 15px;
+  }
+
+  .data-trainer h4 {
+    font-size: 20px;
+    line-height: 5px;
+  }
+
+  /* Akhir Trainer */
+}
+
+/* Responsive */
+@media only screen and (max-width: 767px) {
+  #nav {
+    height: 70px;
+  }
+  #navbarTogglerDemo02 {
+    position: relative;
+    top: 30px;
+    background-color: #222;
+    padding: 0 0 20px 20px;
+  }
+
+  .navbar-brand img {
+    width: 5%;
+    top: 15px;
+    left: 30px;
+    position: absolute;
+  }
+
+  .harga {
+    padding: 0;
+    transform: scaleX(0.8);
+    width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Our Trainer */
+
+  .trainer-kita {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .trainer {
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .gambartrainer {
+    height: 100%;
+    z-index: 0;
+  }
+
+  .trainer:hover {
+    background-color: #bacb4d;
+    /* border: #222 solid 4px; */
+    cursor: pointer;
+  }
+
+  .gambartrainer img {
+    width: 100%;
+  }
+
+  .data-trainer {
+    color: #bacb4d;
+    position: absolute;
+    background-color: #222;
+    bottom: 0px;
+    height: 60px;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    padding-top: 15px;
+  }
+
+  .data-trainer h4 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .data-trainer p {
+    display: none;
+  }
+
+  /* Akhir Trainer */
+}
+
+@media only screen and (max-width: 552px) {
+  .judul-konten h1 {
+    font-size: 20px;
+  }
+  .container-fluid .fas {
+    top: 10px;
+    right: 20px;
+    position: absolute;
+  }
+  .flex-item.trainer {
+    min-width: 50%;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  /* Size semua judul */
+  .judul {
+    font-size: 30px;
+  }
+
+  /* Akhir font sixe semua judul */
+
+  /* Akhir Navbar */
+  #nav {
+    height: 50px;
+    width: auto;
+  }
+
+  #navbarTogglerDemo02 {
+    position: relative;
+    top: 0px;
+    background-color: #222;
+    padding: 0 0 20px 20px;
+  }
+
+  .navbar-brand img {
+    width: 5%;
+    top: 10px;
+    left: 30px;
+    position: absolute;
+  }
+  /* Our Trainer */
+  .trainer {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .gambartrainer {
+    height: 100%;
+    z-index: 0;
+  }
+
+  .trainer:hover {
+    background-color: #bacb4d;
+    /* border: #222 solid 4px; */
+    cursor: pointer;
+  }
+
+  .gambartrainer img {
+    width: 100%;
+  }
+
+  .data-trainer {
+    height: 50px;
+    padding-top: 10px;
+  }
+
+  .data-trainer p {
+    display: none;
+  }
+  /* Akhir Trainer */
+
+  /* Paket Spesial */
+  .harga {
+    left: -10px;
+  }
+  /* Akhir Paket Spesial */
+
+  /* Tabel harga */
+  .tabel-harga {
+    height: 600px;
+  }
+
+  .table {
+    transform: scale(0.7);
+    position: absolute;
+    top: 50px;
+    left: -60px;
+  }
+  /* Akhir Tabel Harga */
+
+  /* Footer */
+  .page-footer {
+    padding-left: 20px;
+  }
+  /* Akhir Footer */
+}
+/* Akhir Responsive */

@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kelas</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
+
+    <!-- FontAwesome -->
+    <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet" />
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="style/kelasstyle.css" />
+
+    <!-- Javascript Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+
+    <!--JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md position-fixed fixed-top" id="nav">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="https://i.ibb.co/85FSWpt/AH-GYM.png" alt="AH-GYM" border="0" /></a>
+        <i class="fas fa-bars navbar-toggler" id="bar" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation"></i>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav mb-2 mb-lg-0 justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item position-relative">
+              <a class="nav-link dropdown-toggle active border-bawah" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false" id="nyala">Program</a>
+              <ul class="dropdown-menu position-absolute m-0">
+                <li>
+                  <a class="dropdown-item active border-bawah" href="kelas.html">Kelas</a>
+                  <div class="border-bawah"></div>
+                </li>
+                <li><a class="dropdown-item" href="course.html">Personal</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="toko.html">Produk</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="galeri.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aboutus.html">About Us</a>
+            </li>
+            <li class="nav-item"><a class="btn" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Daftar</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Akhir Navbar -->
+
+    <!-- Daftar dan Masuk-->
+    <!-- Daftar -->
+    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalToggleLabel">Daftar</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form action="">
+              <input type="text" placeholder="Nama Depan" />
+              <input type="text" placeholder="Nama Belakang" />
+              <input type="text" class="form-panjang" placeholder="Email" />
+              <input type="password" class="form-panjang" placeholder="Password" />
+              <input type="password" class="form-panjang" placeholder="Confirm Password" />
+              <button>Daftar</button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <a class="punya-akun" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal">Sudah punya akun?</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Akhir Daftar -->
+    <!-- Masuk -->
+    <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalToggleLabel2">Masuk</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form action="">
+              <input type="text" class="form-panjang" placeholder="Email" />
+              <input type="password" class="form-panjang" placeholder="Password" />
+              <button>Masuk</button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <a href="" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" data-bs-dismiss="modal">Belum Punya Akun?</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Akhir Masuk -->
+    <!-- Akhir Daftar dan Masuk -->
+
+    <!-- Background -->
+    <div class="background w-100 mb-5 position-relative">
+      <div class="position-absolute top-50 start-50 translate-middle text-center judul-konten">
+        <h1>Kelas GYM</h1>
+        <p><b>Pilih Kelas GYM mu Sendiri di Sini</b></p>
+      </div>
+      <img src="https://i.ibb.co/25Lyn7c/Untitled-design-4.png" alt="Untitled-design-4" border="0" />
+    </div>
+    <!-- Akhir Background -->
+
+    <!-- Kelas -->
+    <div class="container">
+      <ul class="nav nav-pills mb-0" id="pills-tab" role="tablist">
+        <li class="nav-item bawah" role="presentation">
+          <button class="nav-link active tab-kelas" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">YOGA</button>
+        </li>
+        <li class="nav-item bawah" role="presentation">
+          <button class="nav-link tab-kelas" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">CARDIO</button>
+        </li>
+        <li class="nav-item bawah" role="presentation">
+          <button class="nav-link tab-kelas" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">ZUMBA</button>
+        </li>
+        <li class="nav-item bawah" role="presentation">
+          <button class="nav-link tab-kelas" id="pills-hiit-tab" data-bs-toggle="pill" data-bs-target="#pills-hiit" type="button" role="tab" aria-controls="pills-hiit" aria-selected="false">HIIT</button>
+        </li>
+      </ul>
+    </div>
+    <div class="tab-content m-5" id="pills-tabContent">
+      <!-- Olahraga Yoga -->
+      <div class="container tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+        <div class="d-flex justify-content-around flex-wrap">
+          <div class="flex-item position-relative kelas">
+            <img src="https://i.ibb.co/VNj6bnY/yoga7.jpg" class="position-relative" alt="yoga11" border="0" />
+            <div class="position-absolute" id="segitiga-bawah"></div>
+            <div class="position-absolute judul-yoga p-1">
+              <h4>Healthy Strech</h4>
+              <p>Tipe : Kaki dan Lengan</p>
+              <p>Duarasi : 30-40 Menit</p>
+            </div>
+          </div>
+
+          <div class="flex-item position-relative kelas">
+            <img src="https://i.ibb.co/4gXcTmN/yoga11.jpg" class="position-relative" alt="yoga11" border="0" />
+            <div class="position-absolute" id="segitiga-bawah"></div>
+            <div class="position-absolute judul-yoga p-1">
+              <h4>Healthy Strech</h4>
+              <p>Tipe : Kaki dan Lengan</p>
+              <p>Duarasi : 30-40 Menit</p>
+            </div>
+          </div>
+          <div class="flex-item position-relative kelas">
+            <img src="https://i.ibb.co/PDd3BLf/yoga2.jpg" class="position-relative" alt="yoga2" border="0" />
+            <div class="position-absolute" id="segitiga-bawah"></div>
+            <div class="position-absolute judul-yoga p-1">
+              <h4>DE-STRESS Yoga</h4>
+              <p>Tipe : Lengan dan Pikiran</p>
+              <p>Duarasi : 30-40 Menit</p>
+            </div>
+          </div>
+          <div class="flex-item position-relative kelas">
+            <img src="https://i.ibb.co/FD5SHWH/yoga13.jpg" class="position-relative" alt="yoga13" border="0" />
+
+            <div class="position-absolute" id="segitiga-bawah"></div>
+            <div class="position-absolute judul-yoga p-1">
+              <h4>Flow Body</h4>
+              <p>Tipe : Perut, Kaki, dan Lengan</p>
+              <p>Duarasi : 30-40 Menit</p>
+            </div>
+          </div>
+          <div class="flex-item position-relative kelas">
+            <img src="https://i.ibb.co/JdysSS0/yoga15.jpg" class="position-relative" alt="yoga15" border="0" />
+            <div class="position-absolute" id="segitiga-bawah"></div>
+            <div class="position-absolute judul-yoga p-1">
+              <h4>Les Mills Tone</h4>
+              <p>Tipe : Kaki dan Lengan</p>
+              <p>Duarasi : 30-40 Menit</p>
+            </div>
+          </div>
+          <div class="flex-item position-relative kelas">
+            <img src="https://i.ibb.co/y5y569R/yoga16.jpg" class="position-relative" alt="yoga16" border="0" />
+            <div class="position-absolute" id="segitiga-bawah"></div>
+            <div class="position-absolute judul-yoga p-1">
+              <h4>Body Core</h4>
+              <p>Tipe : Lengan dan Pikiran</p>
+              <p>Duarasi : 30-40 Menit</p>
+            </div>
+          </div>
+          <div class="flex-item position-relative kelas">
+            <img src="https://i.ibb.co/D9SbNYq/yoga12.jpg" class="position-relative" alt="yoga12" border="0" />
+            <div class="position-absolute" id="segitiga-bawah"></div>
+            <div class="position-absolute judul-yoga p-1">
+              <h4>Body Balance</h4>
+              <p>Tipe : Perut, Kaki, dan Lengan</p>
+              <p>Duarasi : 30-40 Menit</p>
+            </div>
+          </div>
+          <div class="flex-item position-relative kelas">
+            <img src="https://i.ibb.co/vkB2MBJ/yoga5.jpg" class="position-relative" alt="yoga5" border="0" />
+            <div class="position-absolute" id="segitiga-bawah"></div>
+            <div class="position-absolute judul-yoga p-1">
+              <h4>Dynamic Yoga</h4>
+              <p>Tipe : Kaki dan Lengan</p>
+              <p>Duarasi : 30-40 Menit</p>
+            </div>
+          </div>
+          <div class="flex-item position-relative kelas">
+            <img src="https://i.ibb.co/G0qppFk/yoga17.jpg" class="position-relative" alt="yoga17" border="0" />
+            <div class="position-absolute" id="segitiga-bawah"></div>
+            <div class="position-absolute judul-yoga p-1">
+              <h4>Gentle Flow Yoga</h4>
+              <p>Tipe : Lengan dan Pikiran</p>
+              <p>Duarasi : 30-40 Menit</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Akhi Olahraga Yoga -->
+      </div>
+      <!-- CARDIO -->
+      <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+        <span class="glyphicon glyphicon-triangle-top" style="color: black"></span>
+        <div class="container tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+          <div class="d-flex justify-content-around flex-wrap">
+            <div class="flex-item position-relative kelas">
+              <img src="https://i.ibb.co/KxL2W45/cardio1.jpg" class="position-relative" alt="yoga7" border="0" />
+              <div class="position-absolute" id="segitiga-bawah"></div>
+              <div class="position-absolute judul-yoga p-1">
+                <h4>Burn Up</h4>
+                <p>Tipe : Perut, Kaki, dan Lengan</p>
+                <p>Duarasi : 30-40 Menit</p>
+              </div>
+            </div>
+            <div class="flex-item position-relative kelas">
+              <img src="https://i.ibb.co/TvC34P8/cardio2.jpg" class="position-relative" alt="yoga11" border="0" />
+              <div class="position-absolute" id="segitiga-bawah"></div>
+              <div class="position-absolute judul-yoga p-1">
+                <h4>Body Cardio</h4>
+                <p>Tipe : Seluruh badan</p>
+                <p>Duarasi : 40-50 Menit</p>
+              </div>
+            </div>
+            <div class="flex-item position-relative kelas">
+              <img src="https://i.ibb.co/BKcjJhz/cardio4.jpg" class="position-relative" alt="yoga2" border="0" />
+              <div class="position-absolute" id="segitiga-bawah"></div>
+              <div class="position-absolute judul-yoga p-1">
+                <h4>Dance Cardio</h4>
+                <p>Tipe : Paha, lengan, dan perut</p>
+                <p>Duarasi : 30-45 Menit</p>
+              </div>
+            </div>
+
+            <div class="flex-item position-relative kelas">
+              <img src="https://i.ibb.co/q56yyzn/cardio5.jpg" class="position-relative" alt="yoga13" border="0" />
+
+              <div class="position-absolute" id="segitiga-bawah"></div>
+              <div class="position-absolute judul-yoga p-1">
+                <h4>Full Body Cardio</h4>
+                <p>Tipe : Turun berat badan dan Kaki</p>
+                <p>Duarasi : 35-40 Menit</p>
+              </div>
+            </div>
+            <div class="flex-item position-relative kelas">
+              <img src="https://i.ibb.co/v3566nn/cardio6.jpg" class="position-relative" alt="yoga15" border="0" />
+              <div class="position-absolute" id="segitiga-bawah"></div>
+              <div class="position-absolute judul-yoga p-1">
+                <h4>15 Minute Cardio</h4>
+                <p>Tipe : Kaki dan Paha</p>
+                <p>Duarasi : 15 Menit</p>
+              </div>
+            </div>
+            <div class="flex-item position-relative kelas">
+              <img src="https://i.ibb.co/zxwYz6v/cardio7.jpg" class="position-relative" alt="yoga16" border="0" />
+              <div class="position-absolute" id="segitiga-bawah"></div>
+              <div class="position-absolute judul-yoga p-1">
+                <h4>Full Burn Body</h4>
+                <p>Tipe : Lengan, Kaki, dan Perut</p>
+                <p>Duarasi : 20 Menit</p>
+              </div>
+            </div>
+
+            <div class="flex-item position-relative kelas">
+              <img src="https://i.ibb.co/wy1nxL0/cardio8.jpg" class="position-relative" alt="yoga12" border="0" />
+
+              <div class="position-absolute" id="segitiga-bawah"></div>
+              <div class="position-absolute judul-yoga p-1">
+                <h4>Fat Burn Cardio</h4>
+                <p>Tipe : Perut dan Lengan</p>
+                <p>Duarasi : 30-40 Menit</p>
+              </div>
+            </div>
+            <div class="flex-item position-relative kelas">
+              <img src="https://i.ibb.co/Pr8TT3k/cardio9.jpg" class="position-relative" alt="yoga5" border="0" />
+              <div class="position-absolute" id="segitiga-bawah"></div>
+              <div class="position-absolute judul-yoga p-1">
+                <h4>Arms Fat</h4>
+                <p>Tipe : Lengan</p>
+                <p>Duarasi : 15-20 Menit</p>
+              </div>
+            </div>
+
+            <div class="flex-item position-relative kelas">
+              <img src="https://i.ibb.co/h8dJPZ0/hiit12.jpg" class="position-relative" alt="yoga5" border="0" />
+              <div class="position-absolute" id="segitiga-bawah"></div>
+              <div class="position-absolute judul-yoga p-1">
+                <h4>Cardio Full</h4>
+                <p>Tipe : Kaki dan Lengan</p>
+                <p>Duarasi : 30-40 Menit</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Akhi Olahraga Yoga -->
+
+      <!-- Zumba -->
+      <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+        <span class="glyphicon glyphicon-triangle-top" style="color: black"></span>
+        <div class="container tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+          <div class="d-flex justify-content-around flex-wrap">
+            <div class="flex-item position-relative kelas">
+              <img src="https://i.ibb.co/1n0Y2kV/zumba1.jpg" class="position-relative" alt="yoga7" border="0" />
+              <div class="position-absolute" id="segitiga-bawah"></div>
+              <div class="position-absolute judul-yoga p-1">
+                <h4>Zumba Day</h4>
+                <p>Tipe : Lengan, Kaki, dan Paha</p>
+                <p>Duarasi : 30-40 Menit</p>
+              </div>
+            </div>
+            <div class="flex-item position-relative kelas">
+              <img src="https://i.ibb.co/xsBY9Kw/zumba2.jpg" class="position-relative" alt="yoga11" border="0" />
+              <div class="position-absolute" id="segitiga-bawah"></div>
+              <div class="position-absolute judul-yoga p-1">
+                <h4>Strech Zumba</h4>
+                <p>Tipe : Punggu dan Perut</p>
+                <p>Duarasi : 15 Menit</p>
+              </div>
+            </div>
+            <div class="flex-item position-relative kelas">
+              <img src="https://i.ibb.co/NSWGh6S/zumba3.jpg" class="position-relative" alt="yoga2" border="0" />
+              <div class="position-absolute" id="segitiga-bawah"></div>
+              <div class="position-absolute judul-yoga p-1">
+                <h4>Cyuncyzk Zumba</h4>
+                <p>Tipe : Inti dan Kaki</p>
+                <p>Duarasi : 40-50 Menit</p>
+              </div>
+            </div>
+            <div class="flex-item position-relative kelas">
+              <img src="https://i.ibb.co/9bwGgJZ/zumba4-1-1.jpg" class="position-relative" alt="yoga13" border="0" />
+              <div class="position-absolute" id="segitiga-bawah"></div>
+              <div class="position-absolute judul-yoga p-1">
+                <h4>Zumba Dance</h4>
+                <p>Tipe : Perut, Kaki, dan Lengan</p>
+                <p>Duarasi : 30-40 Menit</p>
+              </div>
+            </div>
+            <div class="flex-item position-relative kelas">
+              <img src="https://i.ibb.co/dDq3HFn/zumba5.jpg" class="position-relative" alt="yoga15" border="0" />
+              <div class="position-absolute" id="segitiga-bawah"></div>
+              <div class="position-absolute judul-yoga p-1">
+                <h4>Zumba Flat Belly</h4>
+                <p>Tipe : Kaki dan Lengan</p>
+                <p>Duarasi : 30-40 Menit</p>
+              </div>
+            </div>
+
+            <div class="flex-item position-relative kelas">
+              <img src="https://i.ibb.co/sJ4gMBV/zumba6-1.jpg" class="position-relative" alt="yoga16" border="0" />
+              <div class="position-absolute" id="segitiga-bawah"></div>
+              <div class="position-absolute judul-yoga p-1">
+                <h4>20 Menit Zumba</h4>
+                <p>Tipe : Seluruh badan</p>
+                <p>Duarasi : 20 Menit</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Akhir Zumba -->
+      <!-- HIIT -->
+      <div class="tab-pane fade" id="pills-hiit" role="tabpanel" aria-labelledby="pills-hiit-tab">
+        <span class="glyphicon glyphicon-triangle-top" style="color: black"></span>
+        <div class="container tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+          <div class="d-flex justify-content-around flex-wrap">
+            <div class="flex-item position-relative kelas">
+              <img src="https://i.ibb.co/3vBD68L/hiit1.jpg" class="position-relative" alt="yoga7" border="0" />
+              <div class="position-absolute" id="segitiga-bawah"></div>
+              <div class="position-absolute judul-yoga p-1">
+                <h4>Full Burn HIIT</h4>
+                <p>Tipe : Perut, Kaki, dan Lengan</p>
+                <p>Duarasi : 30 Menit</p>
+              </div>
+            </div>
+            <div class="flex-item position-relative kelas">
+              <img src="https://i.ibb.co/RNybP6K/hiit2.jpg" class="position-relative" alt="yoga11" border="0" />
+              <div class="position-absolute" id="segitiga-bawah"></div>
+              <div class="position-absolute judul-yoga p-1">
+                <h4>HIIT Lose Weight</h4>
+                <p>Tipe : Seluruh Badan</p>
+                <p>Duarasi : 30-40 Menit</p>
+              </div>
+            </div>
+            <div class="flex-item position-relative kelas">
+              <img src="https://i.ibb.co/jzthTfq/hiit3.jpg" class="position-relative" alt="yoga2" border="0" />
+              <div class="position-absolute" id="segitiga-bawah"></div>
+              <div class="position-absolute judul-yoga p-1">
+                <h4>Burn Fat</h4>
+                <p>Tipe : Kaki, Tangan dan Perut</p>
+                <p>Duarasi : 20-30 Menit</p>
+              </div>
+            </div>
+
+            <div class="flex-item position-relative kelas">
+              <img src="https://i.ibb.co/LdK7yxT/hiit4.jpg" class="position-relative" alt="yoga13" border="0" />
+
+              <div class="position-absolute" id="segitiga-bawah"></div>
+              <div class="position-absolute judul-yoga p-1">
+                <h4>HIIT Burn Calories</h4>
+                <p>Tipe : Perut, Kaki, dan Lengan</p>
+                <p>Duarasi : 30-40 Menit</p>
+              </div>
+            </div>
+            <div class="flex-item position-relative kelas">
+              <img src="https://i.ibb.co/f8YxXnb/hiit5.jpg" class="position-relative" alt="yoga15" border="0" />
+              <div class="position-absolute" id="segitiga-bawah"></div>
+              <div class="position-absolute judul-yoga p-1">
+                <h4>HIIT Shreddes</h4>
+                <p>Tipe : Kaki dan Lengan</p>
+                <p>Duarasi : 35-40 Menit</p>
+              </div>
+            </div>
+            <div class="flex-item position-relative kelas">
+              <img src="https://i.ibb.co/6RbDTgd/hiit6.jpg" class="position-relative" alt="yoga16" border="0" />
+              <div class="position-absolute" id="segitiga-bawah"></div>
+              <div class="position-absolute judul-yoga p-1">
+                <h4>Standing HIIT</h4>
+                <p>Tipe : Kaki</p>
+                <p>Duarasi : 15-20 Menit</p>
+              </div>
+            </div>
+
+            <div class="flex-item position-relative kelas">
+              <img src="https://i.ibb.co/gzRcz8K/hiit7.jpg" class="position-relative" alt="yoga12" border="0" />
+
+              <div class="position-absolute" id="segitiga-bawah"></div>
+              <div class="position-absolute judul-yoga p-1">
+                <h4>10 Min HIIT</h4>
+                <p>Tipe : Perut, Kaki, dan Lengan</p>
+                <p>Duarasi : 10 Menit</p>
+              </div>
+            </div>
+            <div class="flex-item position-relative kelas">
+              <img src="https://i.ibb.co/VNwbqR8/hiit8.jpg" class="position-relative" alt="yoga5" border="0" />
+              <div class="position-absolute" id="segitiga-bawah"></div>
+              <div class="position-absolute judul-yoga p-1">
+                <h4>HIIT Cardio</h4>
+                <p>Tipe : Kaki, Lengan, dan Paha</p>
+                <p>Duarasi : 30-40 Menit</p>
+              </div>
+            </div>
+            <div class="flex-item position-relative kelas">
+              <img src="https://i.ibb.co/DWGF18h/hiit9.jpg" class="position-relative" alt="yoga5" border="0" />
+              <div class="position-absolute" id="segitiga-bawah"></div>
+              <div class="position-absolute judul-yoga p-1">
+                <h4>Upper HIIT</h4>
+                <p>Tipe : Lengan dan Pundak</p>
+                <p>Duarasi : 10-15 Menit</p>
+              </div>
+            </div>
+            <div class="flex-item position-relative kelas">
+              <img src="https://i.ibb.co/c32fxbS/hiit10.jpg" class="position-relative" alt="yoga5" border="0" />
+              <div class="position-absolute" id="segitiga-bawah"></div>
+              <div class="position-absolute judul-yoga p-1">
+                <h4>Lower HIIT</h4>
+                <p>Tipe : Perut dan Kaki</p>
+                <p>Duarasi : 30-40 Menit</p>
+              </div>
+            </div>
+            <div class="flex-item position-relative kelas">
+              <img src="https://i.ibb.co/h2CfgC9/hiit11.jpg" class="position-relative" alt="yoga5" border="0" />
+              <div class="position-absolute" id="segitiga-bawah"></div>
+              <div class="position-absolute judul-yoga p-1">
+                <h4>Sweat Workout</h4>
+                <p>Tipe : Kaki dan Lengan</p>
+                <p>Duarasi : 30-40 Menit</p>
+              </div>
+            </div>
+            <div class="flex-item position-relative kelas">
+              <img src="https://i.ibb.co/h8dJPZ0/hiit12.jpg" class="position-relative" alt="yoga5" border="0" />
+              <div class="position-absolute" id="segitiga-bawah"></div>
+              <div class="position-absolute judul-yoga p-1">
+                <h4>HIIT Weight Lose</h4>
+                <p>Tipe : Seluruh Badan</p>
+                <p>Duarasi : 30 Menit</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Akhir HIIT -->
+    </div>
+    <!-- Akhir Kelas -->
+
+    <!-- Footer -->
+    <footer class="page-footer mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-sm-2">
+            <h3 class="text-uppercase font-weightbold">A&H Gym</h3>
+          </div>
+          <div class="col-lg-2 col-sm-12">
+            <h6 class="text-uppercase font-weight-bold">Program</h6>
+            <p>
+              Personal Training <br />Group <br />Yoga <br />
+              Zumba <br />
+              Cardio
+            </p>
+          </div>
+          <div class="col-lg-3 col-sm-12">
+            <h6 class="text-uppercase font-weight-bold">Contact</h6>
+            <p>Pabelan, Colomadu, Karanganyar<br />ah77@gmail.com <br />0271 8888 6666<br />0857 1234 4321</p>
+          </div>
+          <div class="col-lg-4 col-md-10 col-sm-12 sosial-media">
+            <ul>
+              <li>
+                <a href="https://www.instagram.com/uns.official/"><i class="fab fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="https://twitter.com/maret_sebelas"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/UNSOfficial"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+              </li>
+              <li>
+                <a href="mailto:someone@yoursite.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/channel/UCy-IuqRriMA9hCFoLkI2Ekg"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <p class="text-center">Copyright ©2021 All rights reserved | This template is made by M. Aqil Sadik (K3520046) & Nur Isnaini H. (K3520058)</p>
+        </div>
+      </div>
+    </footer>
+    <!-- Akhir Footer -->
+
+    <script src="jquery/script.js"></script>
+  </body>
+</html>

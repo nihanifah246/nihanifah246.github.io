@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toko</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
+
+    <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet" />
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="style/tokostyle.css" />
+
+    <!-- Javascript Bootstrap -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+
+    <!--JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md position-fixed fixed-top" id="nav">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="https://i.ibb.co/85FSWpt/AH-GYM.png" alt="AH-GYM" border="0" /></a>
+        <i class="fas fa-bars navbar-toggler" id="bar" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation"></i>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav mb-2 mb-lg-0 justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item position-relative">
+              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Program</a>
+              <ul class="dropdown-menu position-absolute m-0">
+                <li>
+                  <a class="dropdown-item" href="kelas.html">Kelas</a>
+                  <div class="border-bawah"></div>
+                </li>
+                <li><a class="dropdown-item" href="course.html">Personal</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active border-bawah" href="toko.html">Produk</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="galeri.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aboutus.html">About Us</a>
+            </li>
+            <li class="nav-item"><a class="btn" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Daftar</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Akhir Navbar -->
+
+    <!-- Background -->
+    <div class="background w-100 mb-5">
+      <img src="https://i.ibb.co/ZJ5km8X/Untitled-design-2.png" alt="Untitled-design-2" border="0" />
+    </div>
+    <!-- Akhir Background -->
+
+    <!-- Daftar dan Masuk-->
+    <!-- Daftar -->
+    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalToggleLabel">Daftar</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form action="">
+              <input type="text" placeholder="Nama Depan" />
+              <input type="text" placeholder="Nama Belakang" />
+              <input type="text" class="form-panjang" placeholder="Email" />
+              <input type="password" class="form-panjang" placeholder="Password" />
+              <input type="password" class="form-panjang" placeholder="Confirm Password" />
+              <button>Daftar</button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <a class="punya-akun" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal">Sudah punya akun?</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Akhir Daftar -->
+    <!-- Masuk -->
+    <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalToggleLabel2">Masuk</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form action="">
+              <input type="text" class="form-panjang" placeholder="Email" />
+              <input type="password" class="form-panjang" placeholder="Password" />
+              <button>Masuk</button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <a href="" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" data-bs-dismiss="modal">Belum Punya Akun?</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Akhir Masuk -->
+    <!-- Akhir Daftar dan Masuk -->
+
+    <!-- Best Seller -->
+    <div class="container">
+      <h3 class="judul">Best Seller</h3>
+      <div class="d-flex justify-content-around flex-wrap text-center">
+        <div class="flex-item border bg-ligt pt-2 daftar position-relative">
+          <div class="sepatu">
+            <img src="https://i.ibb.co/ckYwXf3/sepatu5.webp" alt="sepatu5" border="0" />
+            <h4 class="text-start pl-3">Sepatu Fila Htam</h4>
+            <ul class="pl-3">
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star" aria-hidden="true"></i></li>
+              <p class="text-start">3289 Review</p>
+            </ul>
+            <p class="text-start pl-3 harga">Rp 872.000</p>
+          </div>
+          <!-- Deatil dan Chekout -->
+          <div class="position-absolute detail">
+            <ul>
+              <li><i class="fas fa-shopping-cart border p-2"></i></li>
+              <li><i class="fas fa-tags border p-2"></i></li>
+            </ul>
+          </div>
+          <!-- Akhir Deatil dan Chekout -->
+        </div>
+        <div class="flex-item border bg-ligt pt-2 daftar position-relative">
+          <div class="sepatu">
+            <img src="https://i.ibb.co/YT0WhGP/kaos1.webp" alt="kaos1" border="0" />
+            <h4 class="text-start pl-3">Kaos Olahraga</h4>
+            <ul class="pl-3">
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star" aria-hidden="true"></i></li>
+              <p class="text-start">8749 Review</p>
+            </ul>
+            <p class="text-start pl-3 harga">Rp 121.000</p>
+          </div>
+          <!-- Deatil dan Chekout -->
+          <div class="position-absolute detail">
+            <ul>
+              <li><i class="fas fa-shopping-cart border p-2"></i></li>
+              <li><i class="fas fa-tags border p-2"></i></li>
+            </ul>
+          </div>
+          <!-- Akhir Deatil dan Chekout -->
+        </div>
+        <div class="flex-item border bg-ligt pt-2 daftar position-relative">
+          <div class="sepatu">
+            <img src="https://i.ibb.co/Jnd5YyW/peralatan4.webp" alt="peralatan4" border="0" />
+            <h4 class="text-start pl-3">Satu Set Alat Dumble</h4>
+            <ul class="pl-3">
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star" aria-hidden="true"></i></li>
+              <p class="text-start">2190 Review</p>
+            </ul>
+            <p class="text-start pl-3 harga">Rp 1.290.000</p>
+          </div>
+          <!-- Deatil dan Chekout -->
+          <div class="position-absolute detail">
+            <ul>
+              <li><i class="fas fa-shopping-cart border p-2"></i></li>
+              <li><i class="fas fa-tags border p-2"></i></li>
+            </ul>
+          </div>
+          <!-- Akhir Deatil dan Chekout -->
+        </div>
+        <div class="flex-item border bg-ligt pt-2 daftar position-relative">
+          <div class="sepatu">
+            <img src="https://i.ibb.co/PD7szfY/snack5.webp" alt="snack5" border="0" />
+            <h4 class="text-start pl-3">Snakc Sehat Pota</h4>
+            <ul class="pl-3">
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star" aria-hidden="true"></i></li>
+              <p class="text-start">9210 Review</p>
+            </ul>
+            <p class="text-start pl-3 harga">Rp 50.000</p>
+          </div>
+          <!-- Deatil dan Chekout -->
+          <div class="position-absolute detail">
+            <ul>
+              <li><i class="fas fa-shopping-cart border p-2"></i></li>
+              <li><i class="fas fa-tags border p-2"></i></li>
+            </ul>
+          </div>
+          <!-- Akhir Deatil dan Chekout -->
+        </div>
+        <div class="flex-item border bg-ligt pt-2 daftar position-relative">
+          <div class="sepatu">
+            <img src="https://i.ibb.co/xLvX56s/vitamin1.webp" alt="vitamin1" border="0" />
+            <h4 class="text-start pl-3">Swanson Vitamin D3 1000 UI</h4>
+            <ul class="pl-3">
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star" aria-hidden="true"></i></li>
+              <p class="text-start">1290 Review</p>
+            </ul>
+            <p class="text-start pl-3 harga">Rp 267.000</p>
+          </div>
+          <!-- Deatil dan Chekout -->
+          <div class="position-absolute detail">
+            <ul>
+              <li><i class="fas fa-shopping-cart border p-2"></i></li>
+              <li><i class="fas fa-tags border p-2"></i></li>
+            </ul>
+          </div>
+          <!-- Akhir Deatil dan Chekout -->
+        </div>
+      </div>
+    </div>
+    <!-- Akhir Best Seller -->
+
+    <!-- Katergori -->
+    <div class="container">
+      <div class="row">
+        <div class="col border m-3 kategori sepatu position-relative">
+          <h3 class="position-absolute">Sepatu</h3>
+          <p class="position-absolute">Cashback hingga <b>500 Ribu</b></p>
+          <img src="https://i.ibb.co/HDGFrgB/sepatu-removebg-preview.png" alt="sepatu-removebg-preview" border="0" />
+        </div>
+        <div class="col border m-3 kategori baju text-center position-relative">
+          <img src="https://i.ibb.co/6YkZ6zv/kaos3-removebg-preview.png" alt="kaos3-removebg-preview" border="0" />
+          <h3 class="position-absolute">Kaos</h3>
+          <p class="position-absolute">Flash Sale <b>Tiap Minggu</b></p>
+        </div>
+        <div class="col border m-3 kategori celana position-relative">
+          <img src="https://i.ibb.co/LtwB7R6/celana-removebg-preview.png" alt="celana-removebg-preview" border="0" />
+          <h3 class="position-absolute">Celana</h3>
+          <p class="position-absolute">Diskon hingga <b>99%</b></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col border m-3 kategori peralatan text-center">
+          <img src="https://i.ibb.co/yyY0hZ9/peralatan-removebg-preview.png" alt="peralatan-removebg-preview" border="0" />
+          <h3 class="position-absolute">Peralatan</h3>
+          <p class="position-absolute">Peralatan GYM untuk GYM di rumah</p>
+        </div>
+        <div class="col border m-3 kategori makanan text-center">
+          <img src="https://i.ibb.co/sw9LfM5/snack-removebg-preview.png" alt="snack-removebg-preview" border="0" />
+          <h3 class="position-absolute">Cemilan</h3>
+          <p class="position-absolute">Pola makan sehat untuk badan lebih <b>Bugar dan FIT</b></p>
+        </div>
+      </div>
+    </div>
+    <!-- AKhir Kategori -->
+
+    <!-- Daftar Lainnya -->
+    <div class="container">
+      <h3></h3>
+      <div class="d-flex justify-content-around flex-wrap ext-center">
+        <div class="flex-item border bg-ligt pt-2 daftar position-relative">
+          <div class="sepatu">
+            <img src="https://i.ibb.co/bQDG23n/kaos4.webp" alt="kaos4" border="0" />
+            <h4 class="text-start pl-3">Kaos Lengan Panjang Wanita</h4>
+            <ul class="pl-3">
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star" aria-hidden="true"></i></li>
+              <p class="text-start">243 Review</p>
+            </ul>
+            <p class="text-start pl-3 harga">Rp 140.000</p>
+          </div>
+          <!-- Deatil dan Chekout -->
+          <div class="position-absolute detail">
+            <ul>
+              <li><i class="fas fa-shopping-cart border p-2"></i></li>
+              <li><i class="fas fa-tags border p-2"></i></li>
+            </ul>
+          </div>
+          <!-- Akhir Deatil dan Chekout -->
+        </div>
+        <div class="flex-item border bg-ligt pt-2 daftar position-relative">
+          <div class="sepatu">
+            <img src="https://i.ibb.co/xDGVrYC/kaos3.webp" alt="kaos3" border="0" />
+            <h4 class="text-start pl-3">Kaos Fila Pria Lengan Pendek</h4>
+            <ul class="pl-3">
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star" aria-hidden="true"></i></li>
+              <p class="text-start">187 Review</p>
+            </ul>
+            <p class="text-start pl-3 harga">Rp 129.000</p>
+          </div>
+          <!-- Deatil dan Chekout -->
+          <div class="position-absolute detail">
+            <ul>
+              <li><i class="fas fa-shopping-cart border p-2"></i></li>
+              <li><i class="fas fa-tags border p-2"></i></li>
+            </ul>
+          </div>
+          <!-- Akhir Deatil dan Chekout -->
+        </div>
+        <div class="flex-item border bg-ligt pt-2 daftar position-relative">
+          <div class="sepatu">
+            <img src="https://i.ibb.co/Hn8NKdp/kaos2.webp" alt="kaos2" border="0" />
+            <h4 class="text-start pl-3">Kaos Pria Tanpa Lengan</h4>
+            <ul class="pl-3">
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star" aria-hidden="true"></i></li>
+              <p class="text-start">78 Review</p>
+            </ul>
+            <p class="text-start pl-3 harga">Rp 99.000</p>
+          </div>
+          <!-- Deatil dan Chekout -->
+          <div class="position-absolute detail">
+            <ul>
+              <li><i class="fas fa-shopping-cart border p-2"></i></li>
+              <li><i class="fas fa-tags border p-2"></i></li>
+            </ul>
+          </div>
+          <!-- Akhir Deatil dan Chekout -->
+        </div>
+        <div class="flex-item border bg-ligt pt-2 daftar position-relative">
+          <div class="sepatu">
+            <img src="https://i.ibb.co/hFWq4ZV/celana5.webp" alt="celana5" border="0" />
+            <h4 class="text-start pl-3">Celana Olahraga Pendek</h4>
+            <ul class="pl-3">
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star" aria-hidden="true"></i></li>
+              <p class="text-start">221 Review</p>
+            </ul>
+            <p class="text-start pl-3 harga">Rp 117.000</p>
+          </div>
+          <!-- Deatil dan Chekout -->
+          <div class="position-absolute detail">
+            <ul>
+              <li><i class="fas fa-shopping-cart border p-2"></i></li>
+              <li><i class="fas fa-tags border p-2"></i></li>
+            </ul>
+          </div>
+          <!-- Akhir Deatil dan Chekout -->
+        </div>
+        <div class="flex-item border bg-ligt pt-2 daftar position-relative">
+          <div class="sepatu">
+            <img src="https://i.ibb.co/mDxHWN8/celana4.webp" alt="celana4" border="0" />
+            <h4 class="text-start pl-3">Celana Panjang Olahraga Wanita</h4>
+            <ul class="pl-3">
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star" aria-hidden="true"></i></li>
+              <p class="text-start">401 Review</p>
+            </ul>
+            <p class="text-start pl-3 harga">Rp 264.000</p>
+          </div>
+          <!-- Deatil dan Chekout -->
+          <div class="position-absolute detail">
+            <ul>
+              <li><i class="fas fa-shopping-cart border p-2"></i></li>
+              <li><i class="fas fa-tags border p-2"></i></li>
+            </ul>
+          </div>
+          <!-- Akhir Deatil dan Chekout -->
+        </div>
+        <div class="flex-item border bg-ligt pt-2 daftar position-relative">
+          <div class="sepatu">
+            <img src="https://i.ibb.co/7yjJWtM/vitamin2.webp" alt="vitamin2" border="0" />
+            <h4 class="text-start pl-3">Evolene Crevolene 330G</h4>
+            <ul class="pl-3">
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star" aria-hidden="true"></i></li>
+              <p class="text-start">123 Review</p>
+            </ul>
+            <p class="text-start pl-3 harga">Rp 560.000</p>
+          </div>
+          <!-- Deatil dan Chekout -->
+          <div class="position-absolute detail">
+            <ul>
+              <li><i class="fas fa-shopping-cart border p-2"></i></li>
+              <li><i class="fas fa-tags border p-2"></i></li>
+            </ul>
+          </div>
+          <!-- Akhir Deatil dan Chekout -->
+        </div>
+        <div class="flex-item border bg-ligt pt-2 daftar position-relative">
+          <div class="sepatu">
+            <img src="https://i.ibb.co/P1V4F3Q/snack4.webp" alt="snack4" border="0" />
+            <h4 class="text-start pl-3">Soyjoy Lima Varian</h4>
+            <ul class="pl-3">
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star" aria-hidden="true"></i></li>
+              <p class="text-start">198 Review</p>
+            </ul>
+            <p class="text-start pl-3 harga">Rp 87.000</p>
+          </div>
+          <!-- Deatil dan Chekout -->
+          <div class="position-absolute detail">
+            <ul>
+              <li><i class="fas fa-shopping-cart border p-2"></i></li>
+              <li><i class="fas fa-tags border p-2"></i></li>
+            </ul>
+          </div>
+          <!-- Akhir Deatil dan Chekout -->
+        </div>
+        <div class="flex-item border bg-ligt pt-2 daftar position-relative">
+          <div class="sepatu">
+            <img src="https://i.ibb.co/NVL8rnr/snack3.webp" alt="snack3" border="0" />
+            <h4 class="text-start pl-3">Snack Fitchips Tiga Varian</h4>
+            <ul class="pl-3">
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star" aria-hidden="true"></i></li>
+              <p class="text-start">782 Review</p>
+            </ul>
+            <p class="text-start pl-3 harga">Rp 45.000</p>
+          </div>
+          <!-- Deatil dan Chekout -->
+          <div class="position-absolute detail">
+            <ul>
+              <li><i class="fas fa-shopping-cart border p-2"></i></li>
+              <li><i class="fas fa-tags border p-2"></i></li>
+            </ul>
+          </div>
+          <!-- Akhir Deatil dan Chekout -->
+        </div>
+        <div class="flex-item border bg-ligt pt-2 daftar position-relative">
+          <div class="sepatu">
+            <img src="https://i.ibb.co/prWZ2tK/peralatan2.webp" alt="peralatan2" border="0" />
+            <h4 class="text-start pl-3">Dumble - Alat Gym Mudah</h4>
+            <ul class="pl-3">
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star" aria-hidden="true"></i></li>
+              <p class="text-start">221 Review</p>
+            </ul>
+            <p class="text-start pl-3 harga">Rp 650.000</p>
+          </div>
+          <!-- Deatil dan Chekout -->
+          <div class="position-absolute detail">
+            <ul>
+              <li><i class="fas fa-shopping-cart border p-2"></i></li>
+              <li><i class="fas fa-tags border p-2"></i></li>
+            </ul>
+          </div>
+          <!-- Akhir Deatil dan Chekout -->
+        </div>
+        <div class="flex-item border bg-ligt pt-2 daftar position-relative">
+          <div class="sepatu">
+            <img src="https://i.ibb.co/3d5JZJx/kaos5.webp" alt="kaos5" border="0" />
+            <h4 class="text-start pl-3">Kaos Pria Lengan Pendek Olahraga</h4>
+            <ul class="pl-3">
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star" aria-hidden="true"></i></li>
+              <p class="text-start">164 Review</p>
+            </ul>
+            <p class="text-start pl-3 harga">Rp 280.000</p>
+          </div>
+          <!-- Deatil dan Chekout -->
+          <div class="position-absolute detail">
+            <ul>
+              <li><i class="fas fa-shopping-cart border p-2"></i></li>
+              <li><i class="fas fa-tags border p-2"></i></li>
+            </ul>
+          </div>
+          <!-- Akhir Deatil dan Chekout -->
+        </div>
+        <div class="flex-item border bg-ligt pt-2 daftar position-relative">
+          <div class="sepatu">
+            <img src="https://i.ibb.co/H7T2T1W/peralatan3.webp" alt="peralatan3" border="0" />
+            <h4 class="text-start pl-3">Alat Gym Di Rumah</h4>
+            <ul class="pl-3">
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star" aria-hidden="true"></i></li>
+              <p class="text-start">180 Review</p>
+            </ul>
+            <p class="text-start pl-3 harga">Rp 210.000</p>
+          </div>
+          <!-- Deatil dan Chekout -->
+          <div class="position-absolute detail">
+            <ul>
+              <li><i class="fas fa-shopping-cart border p-2"></i></li>
+              <li><i class="fas fa-tags border p-2"></i></li>
+            </ul>
+          </div>
+          <!-- Akhir Deatil dan Chekout -->
+        </div>
+        <div class="flex-item border bg-ligt pt-2 daftar position-relative">
+          <div class="sepatu">
+            <img src="https://i.ibb.co/k2XzLQY/sepatu2.webp" alt="sepatu2" border="0" />
+            <h4 class="text-start pl-3">Sepatu Fila Wanita</h4>
+            <ul class="pl-3">
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star" aria-hidden="true"></i></li>
+              <p class="text-start">921 Review</p>
+            </ul>
+            <p class="text-start pl-3 harga">Rp 529.000</p>
+          </div>
+          <!-- Deatil dan Chekout -->
+          <div class="position-absolute detail">
+            <ul>
+              <li><i class="fas fa-shopping-cart border p-2"></i></li>
+              <li><i class="fas fa-tags border p-2"></i></li>
+            </ul>
+          </div>
+          <!-- Akhir Deatil dan Chekout -->
+        </div>
+        <div class="flex-item border bg-ligt pt-2 daftar position-relative">
+          <div class="sepatu">
+            <img src="https://i.ibb.co/4mjMks0/peralatan5.webp" alt="peralatan5" border="0" />
+            <h4 class="text-start pl-3">Alat GYM Sederhana</h4>
+            <ul class="pl-3">
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star" aria-hidden="true"></i></li>
+              <p class="text-start">713 Review</p>
+            </ul>
+            <p class="text-start pl-3 harga">Rp 230.000</p>
+          </div>
+          <!-- Deatil dan Chekout -->
+          <div class="position-absolute detail">
+            <ul>
+              <li><i class="fas fa-shopping-cart border p-2"></i></li>
+              <li><i class="fas fa-tags border p-2"></i></li>
+            </ul>
+          </div>
+          <!-- Akhir Deatil dan Chekout -->
+        </div>
+        <div class="flex-item border bg-ligt pt-2 daftar position-relative">
+          <div class="sepatu">
+            <img src="https://i.ibb.co/p0fTnVm/celana3.webp" alt="celana3" border="0" />
+            <h4 class="text-start pl-3">Celana Olahraga Panjang Pria</h4>
+            <ul class="pl-3">
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star" aria-hidden="true"></i></li>
+              <p class="text-start">221 Review</p>
+            </ul>
+            <p class="text-start pl-3 harga">Rp 190.000</p>
+          </div>
+          <!-- Deatil dan Chekout -->
+          <div class="position-absolute detail">
+            <ul>
+              <li><i class="fas fa-shopping-cart border p-2"></i></li>
+              <li><i class="fas fa-tags border p-2"></i></li>
+            </ul>
+          </div>
+          <!-- Akhir Deatil dan Chekout -->
+        </div>
+        <div class="flex-item border bg-ligt pt-2 daftar position-relative">
+          <div class="sepatu">
+            <img src="https://i.ibb.co/zQXvzQD/celana2.webp" alt="celana2" border="0" />
+            <h4 class="text-start pl-3">Celana Olahraga Pendek Pria</h4>
+            <ul class="pl-3">
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star" aria-hidden="true"></i></li>
+              <p class="text-start">924 Review</p>
+            </ul>
+            <p class="text-start pl-3 harga">Rp 99.000</p>
+          </div>
+          <!-- Deatil dan Chekout -->
+          <div class="position-absolute detail">
+            <ul>
+              <li><i class="fas fa-shopping-cart border p-2"></i></li>
+              <li><i class="fas fa-tags border p-2"></i></li>
+            </ul>
+          </div>
+          <!-- Akhir Deatil dan Chekout -->
+        </div>
+        <div class="flex-item border bg-ligt pt-2 daftar position-relative">
+          <div class="sepatu">
+            <img src="https://i.ibb.co/gd0F2gd/celana1.webp" alt="celana1" border="0" />
+            <h4 class="text-start pl-3">Celana Training Pendek Pria</h4>
+            <ul class="pl-3">
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star" aria-hidden="true"></i></li>
+              <p class="text-start">421 Review</p>
+            </ul>
+            <p class="text-start pl-3 harga">Rp 162.000</p>
+          </div>
+          <!-- Deatil dan Chekout -->
+          <div class="position-absolute detail">
+            <ul>
+              <li><i class="fas fa-shopping-cart border p-2"></i></li>
+              <li><i class="fas fa-tags border p-2"></i></li>
+            </ul>
+          </div>
+          <!-- Akhir Deatil dan Chekout -->
+        </div>
+        <div class="flex-item border bg-ligt pt-2 daftar position-relative">
+          <div class="sepatu">
+            <img src="https://i.ibb.co/SPs9xFP/aksesoris2.webp" alt="aksesoris2" border="0" />
+            <h4 class="text-start pl-3">Sarung Tangan Adlikes</h4>
+            <ul class="pl-3">
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star" aria-hidden="true"></i></li>
+              <p class="text-start">172 Review</p>
+            </ul>
+            <p class="text-start pl-3 harga">Rp 129.000</p>
+          </div>
+          <!-- Deatil dan Chekout -->
+          <div class="position-absolute detail">
+            <ul>
+              <li><i class="fas fa-shopping-cart border p-2"></i></li>
+              <li><i class="fas fa-tags border p-2"></i></li>
+            </ul>
+          </div>
+          <!-- Akhir Deatil dan Chekout -->
+        </div>
+        <div class="flex-item border bg-ligt pt-2 daftar position-relative">
+          <div class="sepatu">
+            <img src="https://i.ibb.co/fDChTF2/aksesoris1.webp" alt="aksesoris1" border="0" />
+            <h4 class="text-start pl-3">Pelindung Lutut Saat Olahraga</h4>
+            <ul class="pl-3">
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star" aria-hidden="true"></i></li>
+              <p class="text-start">111 Review</p>
+            </ul>
+            <p class="text-start pl-3 harga">Rp 189.000</p>
+          </div>
+          <!-- Deatil dan Chekout -->
+          <div class="position-absolute detail">
+            <ul>
+              <li><i class="fas fa-shopping-cart border p-2"></i></li>
+              <li><i class="fas fa-tags border p-2"></i></li>
+            </ul>
+          </div>
+          <!-- Akhir Deatil dan Chekout -->
+        </div>
+        <div class="flex-item border bg-ligt pt-2 daftar position-relative">
+          <div class="sepatu">
+            <img src="https://i.ibb.co/RC1jf09/snack2.webp" alt="snack2" border="0" />
+            <h4 class="text-start pl-3">Snack Brokoli Sehat</h4>
+            <ul class="pl-3">
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star" aria-hidden="true"></i></li>
+              <p class="text-start">823 Review</p>
+            </ul>
+            <p class="text-start pl-3 harga">Rp 100.000</p>
+          </div>
+          <!-- Deatil dan Chekout -->
+          <div class="position-absolute detail">
+            <ul>
+              <li><i class="fas fa-shopping-cart border p-2"></i></li>
+              <li><i class="fas fa-tags border p-2"></i></li>
+            </ul>
+          </div>
+          <!-- Akhir Deatil dan Chekout -->
+        </div>
+        <div class="flex-item border bg-ligt pt-2 daftar position-relative">
+          <div class="sepatu">
+            <img src="https://i.ibb.co/CKpyK70/sepatu1.webp" alt="sepatu1" border="0" />
+            <h4 class="text-start pl-3">Sepatu Fila Putih Wanita</h4>
+            <ul class="pl-3">
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star" aria-hidden="true"></i></li>
+              <p class="text-start">232 Review</p>
+            </ul>
+            <p class="text-start pl-3 harga">Rp 416.000</p>
+          </div>
+          <!-- Deatil dan Chekout -->
+          <div class="position-absolute detail">
+            <ul>
+              <li><i class="fas fa-shopping-cart border p-2"></i></li>
+              <li><i class="fas fa-tags border p-2"></i></li>
+            </ul>
+          </div>
+          <!-- Akhir Deatil dan Chekout -->
+        </div>
+        <div class="flex-item border bg-ligt pt-2 daftar position-relative">
+          <div class="sepatu">
+            <img src="https://i.ibb.co/V9Yv5Qz/snack1.webp" alt="snack1" border="0" />
+            <h4 class="text-start pl-3">Snack Oh Grain Rasa Almond</h4>
+            <ul class="pl-3">
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star" aria-hidden="true"></i></li>
+              <p class="text-start">2391 Review</p>
+            </ul>
+            <p class="text-start pl-3 harga">Rp 76.000</p>
+          </div>
+          <!-- Deatil dan Chekout -->
+          <div class="position-absolute detail">
+            <ul>
+              <li><i class="fas fa-shopping-cart border p-2"></i></li>
+              <li><i class="fas fa-tags border p-2"></i></li>
+            </ul>
+          </div>
+          <!-- Akhir Deatil dan Chekout -->
+        </div>
+        <div class="flex-item border bg-ligt pt-2 daftar position-relative">
+          <div class="sepatu">
+            <img src="https://i.ibb.co/0GwmHfr/sepatu4.webp" alt="sepatu4" border="0" />
+            <h4 class="text-start pl-3">Sepatu Olahraga Pria Warna Hitam</h4>
+            <ul class="pl-3">
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star" aria-hidden="true"></i></li>
+              <p class="text-start">621 Review</p>
+            </ul>
+            <p class="text-start pl-3 harga">Rp 780.000</p>
+          </div>
+          <!-- Deatil dan Chekout -->
+          <div class="position-absolute detail">
+            <ul>
+              <li><i class="fas fa-shopping-cart border p-2"></i></li>
+              <li><i class="fas fa-tags border p-2"></i></li>
+            </ul>
+          </div>
+          <!-- Akhir Deatil dan Chekout -->
+        </div>
+        <div class="flex-item border bg-ligt pt-2 daftar position-relative">
+          <div class="sepatu">
+            <img src="https://i.ibb.co/k2XzLQY/sepatu2.webp" alt="sepatu4" border="0" />
+            <h4 class="text-start pl-3">Sepatu Fila Wanita</h4>
+            <ul class="pl-3">
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star" aria-hidden="true"></i></li>
+              <p class="text-start">1293 Review</p>
+            </ul>
+            <p class="text-start pl-3 harga">Rp 810.000</p>
+          </div>
+          <!-- Deatil dan Chekout -->
+          <div class="position-absolute detail">
+            <ul>
+              <li><i class="fas fa-shopping-cart border p-2"></i></li>
+              <li><i class="fas fa-tags border p-2"></i></li>
+            </ul>
+          </div>
+          <!-- Akhir Deatil dan Chekout -->
+        </div>
+
+        <div class="flex-item border bg-ligt pt-2 daftar position-relative">
+          <div class="sepatu">
+            <img src="https://i.ibb.co/RSBDP37/sepatu3.webp" alt="sepatu3" border="0" />
+            <h4 class="text-start pl-3">Sepatu Fila Umum</h4>
+            <ul class="pl-3">
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star hidden" aria-hidden="true"></i></li>
+              <li><i class="fas fa-star" aria-hidden="true"></i></li>
+              <p class="text-start">1230 Review</p>
+            </ul>
+            <p class="text-start pl-3 harga">Rp 620.000</p>
+          </div>
+          <!-- Deatil dan Chekout -->
+          <div class="position-absolute detail">
+            <ul>
+              <li><i class="fas fa-shopping-cart border p-2"></i></li>
+              <li><i class="fas fa-tags border p-2"></i></li>
+            </ul>
+          </div>
+          <!-- Akhir Deatil dan Chekout -->
+        </div>
+      </div>
+    </div>
+    <!-- Akhir Daftar Lainnya -->
+
+    <!-- Footer -->
+    <footer class="page-footer mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-sm-2">
+            <h3 class="text-uppercase font-weightbold">A&H Gym</h3>
+          </div>
+          <div class="col-lg-2 col-sm-12">
+            <h6 class="text-uppercase font-weight-bold">Program</h6>
+            <p>
+              Personal Training <br />Group <br />Yoga <br />
+              Zumba <br />
+              Cardio
+            </p>
+          </div>
+          <div class="col-lg-3 col-sm-12">
+            <h6 class="text-uppercase font-weight-bold">Contact</h6>
+            <p>Pabelan, Colomadu, Karanganyar<br />ah77@gmail.com <br />0271 8888 6666<br />0857 1234 4321</p>
+          </div>
+          <div class="col-lg-4 col-md-10 col-sm-12 sosial-media">
+            <ul>
+              <li>
+                <a href="https://www.instagram.com/uns.official/"><i class="fab fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="https://twitter.com/maret_sebelas"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/UNSOfficial"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+              </li>
+              <li>
+                <a href="mailto:someone@yoursite.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/channel/UCy-IuqRriMA9hCFoLkI2Ekg"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <p class="text-center">Copyright ©2021 All rights reserved | This template is made by M. Aqil Sadik (K3520046) & Nur Isnaini H. (K3520058)</p>
+        </div>
+      </div>
+    </footer>
+    <!-- Akhir Footer -->
+
+    <script src="jquery/script.js"></script>
+  </body>
+</html>

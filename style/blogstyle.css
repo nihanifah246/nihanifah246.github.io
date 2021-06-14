@@ -1,0 +1,539 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+.navbar .top {
+  top: 0px;
+}
+
+.container-fluid .fas {
+  color: white;
+}
+
+#nav {
+  height: 90px;
+  z-index: 4;
+  font-size: 16px;
+  width: 100%;
+}
+
+#nav.scrolled {
+  background-color: #222 !important;
+  transition: background-color 200ms linear;
+  color: aliceblue;
+}
+
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+.navbar-brand img {
+  width: 3%;
+  top: 20px;
+  left: 100px;
+  position: absolute;
+}
+
+.nav-link.active {
+  border-bottom: #bacb4d solid 2px;
+  color: #bacb4d;
+}
+
+.nav-link {
+  margin-right: 1em !important;
+  color: white;
+  font-weight: bold;
+}
+
+.nav-link.dropdown {
+  color: white;
+}
+
+.nav-link:hover {
+  border-bottom: #bacb4d solid 2px;
+  color: #bacb4d;
+}
+
+.dropdown-menu {
+  background-color: #222;
+}
+
+.dropdown-item {
+  color: white;
+}
+
+.dropdown-item:hover {
+  border-bottom: #bacb4d solid 2px;
+  background-color: rgb(231, 193, 193, 0);
+  color: #bacb4d;
+}
+
+.nav-link.dropdown-toggle {
+  color: white;
+}
+.nav-link.dropdown-toggle:hover {
+  color: #bacb4d;
+}
+.dropdown-toggle.show {
+  color: white;
+}
+
+.btn {
+  background-color: #bacb4d;
+  border-radius: 0;
+  font-weight: 500;
+  color: white;
+}
+
+#navbarTogglerDemo02 {
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.nav-item .dropdown-toggle.active {
+  background-color: rgb(255, 255, 255, 0);
+  color: white;
+}
+.dropdown-item.active {
+  background-color: rgb(255, 255, 255, 0);
+  color: white;
+  border-bottom: #bacb4d solid 2px;
+}
+/* Akhir Navbar */
+
+/* Modal */
+form input {
+  margin: 10px;
+  border: 0;
+  border-bottom: #222 solid 0.5px;
+}
+
+form button {
+  width: 100%;
+  border: 0;
+  height: 40px;
+  background-color: #222;
+  color: white;
+  margin: 20px 0 0 0;
+}
+
+.form-panjang {
+  width: 90%;
+}
+
+.punya-akun:hover {
+  cursor: pointer;
+  color: #666;
+}
+
+/* .modal-dialog {
+  display: block;
+} */
+
+.modal-content {
+  display: block;
+  border-radius: 0;
+}
+/* Akhir Modal */
+
+/* Konten Utama */
+.konten-utama {
+  padding: 0;
+  flex-direction: row;
+  /* border: solid 2px black; */
+}
+
+.utama-gambar {
+  height: 500px;
+  width: 100%;
+  position: relative;
+}
+
+.utama-gambar:hover {
+  cursor: pointer;
+}
+.utama-gambar.besar {
+  background-image: url("https://i.ibb.co/bHFWLRT/tips-pemula.jpg");
+  flex: 2;
+  margin-right: 20px;
+}
+
+.utama-gambar.kecil {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.ket {
+  position: absolute;
+  bottom: 0;
+  padding: 20px 20px 0px 20px;
+  color: white;
+  font-size: 15px;
+}
+
+.utama-gambar .flex-item.satu {
+  height: 240px;
+  background-image: url("https://i.ibb.co/RTVNyBN/bangun-oto.jpg");
+  background-position: center;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.ket-sub {
+  color: white;
+  position: absolute;
+  padding: 160px 0 0 20px;
+  font-size: 15px;
+}
+
+.ket-sub.satu {
+  top: 0;
+}
+
+.utama-gambar .dua {
+  height: 240px;
+  background-image: url("https://i.ibb.co/DWGF18h/hiit9.jpg");
+  overflow: hidden;
+}
+
+/* Artikel Terakhir */
+.artikel {
+  height: 400px;
+  width: 32%;
+  overflow: hidden;
+  transition: 0.5s ease-in-out;
+}
+
+.artikel:hover {
+  cursor: pointer;
+  background-color: #222;
+  color: white;
+}
+
+.artikel .gambar-artikel {
+  height: 40%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.artikel .gambar-artikel img {
+  max-height: 200px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.data-artikel {
+  padding: 10px;
+}
+/* Akhir Artike Terakhir */
+
+/* Artikel Lainnya */
+.daftar-artikel .flex-item img {
+  width: 250px;
+  margin: 0 29px 0 0;
+  float: left;
+}
+
+.daftar-artikel {
+  border-bottom: solid 1px #222;
+}
+
+.gambar-daftar-artikel img {
+  height: 150px;
+  width: auto;
+  overflow: hidden;
+}
+/* Akhir artikel lainnya */
+
+/* Daftar artikel */
+
+.lainnya {
+  margin: 0 0 0 30px;
+}
+
+.lainnya h3 {
+  padding-bottom: 10px;
+  border-bottom: #222 solid 1px;
+}
+
+.artikel-lainnya {
+  list-style: none;
+  padding: 0px;
+  line-height: 30px;
+}
+.artikel-lainnya li:hover {
+  background-color: #bacb4d;
+  cursor: pointer;
+}
+
+.artikel-lainnya li {
+  padding: 0 20px 0 30px;
+  font-size: 15px;
+}
+
+.baca a {
+  color: #bacb4d;
+}
+/* Akhir daftar lainnyt */
+/* Footer */
+.page-footer {
+  background-color: #222;
+  color: #ccc;
+  padding: 60px 0 30px;
+}
+.footer-copyright {
+  color: #666;
+  padding: 40px 0;
+}
+
+.program {
+  list-style: none;
+  padding: 0;
+}
+
+.sosial-media {
+  /* border: white solid 2px; */
+  box-sizing: border-box;
+}
+
+.sosial-media ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sosial-media ul li a {
+  color: white;
+}
+
+.sosial-media ul li {
+  float: left;
+  font-size: 30px;
+  margin: 15px;
+  list-style: none;
+}
+/* Akhir Footer */
+
+/* Responsive */
+
+@media only screen and (max-width: 995px) {
+  .artikel {
+    /* transform: scale(0.); */
+    margin: -0px;
+    height: 350px;
+  }
+
+  .artikel .gambar-artikel {
+    height: 180px;
+  }
+  .lainnya {
+    display: none;
+  }
+  .konten-utama {
+    flex-direction: column;
+    height: 700px;
+  }
+
+  .utama-gambar.besar {
+    margin-right: 0;
+    flex: 2;
+    height: 300px;
+  }
+
+  .utama-gambar.kecil {
+    flex: 1;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 10px;
+    height: 400px;
+    overflow: hidden;
+  }
+
+  .utama-gambar.kecil .flex-item.satu {
+    flex: 1;
+    margin-right: 5px;
+  }
+  .utama-gambar.kecil .dua {
+    flex: 1;
+    margin-left: 5px;
+  }
+
+  .ket-sub {
+    padding-left: 0;
+  }
+
+  .ket-sub p {
+    display: none;
+  }
+
+  .data-artikel {
+    font-size: 15px;
+  }
+
+  /* Artikel Terakhir */
+  .artikel {
+    height: 450px;
+    width: 32%;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+  }
+
+  .artikel:hover {
+    cursor: pointer;
+    background-color: #222;
+    color: white;
+  }
+
+  .artikel .gambar-artikel {
+    height: 30%;
+    width: auto;
+    overflow: hidden;
+  }
+  .artikel .gambar-artikel img {
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .data-artikel {
+    padding: 10px;
+  }
+  /* Akhir Artike Terakhir */
+}
+@media only screen and (max-width: 767px) {
+  #nav {
+    height: 70px;
+  }
+
+  #navbarTogglerDemo02 {
+    position: relative;
+    top: 30px;
+    background-color: #222;
+    padding: 0 0 20px 20px;
+  }
+  .navbar-brand img {
+    width: 5%;
+    top: 15px;
+    left: 30px;
+    position: absolute;
+  }
+
+  /* Artikel Terakhir */
+  .artikel {
+    /* transform: scale(0.); */
+    margin: 5px;
+    height: 350px;
+    width: 400px;
+  }
+
+  .artikel .gambar-artikel {
+    height: 180px;
+  }
+
+  .artikel .gambar-artikel img {
+    width: 100%;
+  }
+
+  .lainnya {
+    display: none;
+  }
+  /* Akhir Artike Terakhir */
+
+  .daftar-artikel {
+    flex-direction: column;
+  }
+
+  .gambar-daftar-artikel {
+    width: 100%;
+    height: 200px;
+    border: solid 2px black;
+    overflow: hidden;
+    margin-left: 6%;
+  }
+
+  .daftar-artikel .gambar-daftar-artikel img {
+    height: auto;
+    width: 100%;
+  }
+
+  .konten-utama {
+    height: 700px;
+  }
+
+  .utama-gambar.besar {
+    flex: 3;
+  }
+
+  .utama-gambar.kecil {
+    flex: 1;
+    flex-direction: column;
+    /* justify-content: flex-start; */
+    margin: 10px;
+    height: 100px;
+    overflow: hidden;
+    /* border: hotpink solid 2px; */
+  }
+
+  .utama-gambar.kecil .flex-item.satu {
+    flex: 1;
+    margin-right: 0px;
+    margin-bottom: 10px;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+  }
+  .ket-sub {
+    /* border: green solid 2px; */
+    width: 100%;
+  }
+
+  .ket-sub.satu h5 {
+    position: absolute;
+    top: 25px;
+    left: 20px;
+    font-size: 15px;
+    /* border: hotpink solid 2px; */
+  }
+  .ket-sub.dua h5 {
+    position: absolute;
+    top: 25px;
+    left: 5px;
+    text-align: center;
+    font-size: 15px;
+    /* border: hotpink solid 2px; */
+  }
+  .utama-gambar.kecil .dua {
+    flex: 1;
+    margin-left: 0px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  /* Akhir Navbar */
+  #nav {
+    height: 50px;
+    width: auto;
+  }
+
+  #navbarTogglerDemo02 {
+    position: relative;
+    top: 0px;
+    background-color: #222;
+    padding: 0 0 20px 20px;
+  }
+
+  .navbar-brand img {
+    width: 5%;
+    top: 10px;
+    left: 30px;
+    position: absolute;
+  }
+
+  .container-fluid .fas {
+    top: 15px;
+  }
+
+  /* Akhir Navbar */
+}
+/* Akhir Responsive */

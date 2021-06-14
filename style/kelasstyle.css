@@ -1,0 +1,349 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Lato:wght@300&display=swap");
+
+body {
+  margin: 0px;
+  padding: 0;
+}
+
+/* Navbar */
+.navbar .top {
+  top: 0px;
+}
+
+.container-fluid .fas {
+  color: white;
+}
+
+#nav {
+  height: 90px;
+  z-index: 4;
+  font-size: 16px;
+  width: 100%;
+}
+
+#nav.scrolled {
+  background-color: #222 !important;
+  transition: background-color 200ms linear;
+  color: aliceblue;
+}
+
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+.navbar-brand img {
+  width: 3%;
+  top: 20px;
+  left: 100px;
+  position: absolute;
+}
+
+.nav-link.active {
+  border-bottom: #bacb4d solid 2px;
+  color: #bacb4d;
+}
+
+.nav-link {
+  margin-right: 1em !important;
+  color: white;
+  font-weight: bold;
+}
+
+.nav-link.dropdown {
+  color: white;
+}
+
+.nav-link:hover {
+  color: #bacb4d;
+  border-bottom: #bacb4d solid 2px;
+}
+
+.dropdown-menu {
+  background-color: #222;
+}
+
+.dropdown-item {
+  color: white;
+}
+
+.dropdown-item:hover {
+  background-color: white;
+  /* color: white; */
+}
+
+.nav-link.dropdown-toggle {
+  color: #bacb4d;
+}
+
+#nyala {
+  color: #bacb4d;
+}
+
+.nav-link.dropdown-toggle:hover {
+  color: #bacb4d;
+}
+.dropdown-toggle.show {
+  color: white;
+}
+
+.btn {
+  background-color: #bacb4d;
+  border-radius: 0;
+  font-weight: 500;
+  color: white;
+  font-weight: bold;
+}
+
+#navbarTogglerDemo02 {
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.nav-item .dropdown-toggle.active {
+  background-color: rgb(255, 255, 255, 0);
+  color: white;
+}
+.dropdown-item.active {
+  background-color: rgb(255, 255, 255, 0);
+  color: white;
+  border-bottom: #bacb4d solid 2px;
+}
+/* Akhir Navbar */
+
+/* Tab Kelas */
+.nav-item.bawah .tab-kelas {
+  background-color: #bacb4d;
+  border-radius: 0;
+  font-weight: normal;
+}
+
+#pills-profile-tab:hover {
+  color: #222;
+  border-bottom: #222 solid 1px;
+}
+#pills-home-tab:hover {
+  color: #222;
+  border-bottom: #222 solid 1px;
+}
+#pills-contact-tab:hover {
+  color: #222;
+  border-bottom: #222 solid 1px;
+}
+#pills-hiit-tab:hover {
+  color: #222;
+  border-bottom: #222 solid 1px;
+}
+
+.nav-item .tab-kelas.active {
+  background-color: #222;
+}
+/* Akhir Tab Kelas */
+
+/* Kelas Populer */
+.kelas {
+  padding: 0;
+  transform: scale(100%);
+  margin-bottom: 50px;
+}
+
+.daftar {
+  width: 90%;
+  border: black solid 2px;
+  overflow: hidden;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.kelas #segitiga-bawah {
+  width: auto;
+  height: 0;
+  border-bottom: 130px solid #bacb4d;
+  border-right: 350px solid #bacb4d;
+  clip-path: polygon(0.5% 0, 100% 95%, 100% 100%, 0% 100%);
+  background-color: #bacb4d;
+  bottom: 0;
+  left: 0;
+  opacity: 0.8;
+  transition: 0.5s;
+}
+
+.kelas:hover {
+  cursor: pointer;
+}
+
+.kelas:hover #segitiga-bawah {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+.kelas:hover .judul-yoga {
+  height: 100px;
+}
+.position-absolute.judul-yoga {
+  bottom: 10px;
+  color: white;
+  line-height: 10px;
+  /* border: #666 solid 2px; */
+  height: 60px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+/* Akhir Kelas Populer */
+/* Akhit tab kelas aktive */
+
+/* Background */
+.background img {
+  width: 100%;
+}
+
+.judul-konten {
+  color: white;
+}
+
+.judul-konten h1 {
+  font-family: "Bangers", cursive;
+  font-size: 50px;
+  letter-spacing: 10px;
+}
+/* Akhir Background */
+
+/* Footer */
+.page-footer {
+  background-color: #222;
+  color: #ccc;
+  padding: 60px 0 30px;
+}
+.footer-copyright {
+  color: #666;
+  padding: 40px 0;
+}
+
+.program {
+  list-style: none;
+  padding: 0;
+}
+
+.sosial-media {
+  /* border: white solid 2px; */
+  box-sizing: border-box;
+}
+
+.sosial-media ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sosial-media ul li a {
+  color: white;
+}
+
+.sosial-media ul li {
+  float: left;
+  font-size: 30px;
+  margin: 15px;
+  list-style: none;
+}
+/* Akhir Footer */
+
+/* Responsive */
+@media only screen and (max-width: 995px) {
+  .kelas {
+    padding: -2;
+    transform: scale(0.7);
+    margin: -50px;
+  }
+
+  #daftar-kelas {
+    width: 100%;
+    /* border: black solid 2px; */
+    margin: 0;
+  }
+  .nav-item .tab-kelas {
+    transform: scale(0.8);
+    margin: 0px -30px 0 -5px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  #nav {
+    height: 70px;
+  }
+
+  #navbarTogglerDemo02 {
+    position: relative;
+    top: 30px;
+    background-color: #222;
+    padding: 0 0 20px 20px;
+  }
+
+  .navbar-brand img {
+    width: 5%;
+    top: 15px;
+    left: 30px;
+    position: absolute;
+  }
+
+  .kelas {
+    padding: -2;
+    transform: scale(0.7);
+    margin: -50px;
+  }
+
+  #daftar-kelas {
+    width: 100%;
+    /* border: black solid 2px; */
+    margin: 0;
+  }
+
+  .nav-item .tab-kelas {
+    transform: scale(0.7);
+    margin: 0px -0px 0 -0px;
+  }
+}
+@media only screen and (max-width: 552px) {
+  .judul-konten h1 {
+    font-size: 20px;
+  }
+  .container-fluid .fas {
+    /* top: 20px; */
+    right: 20px;
+    position: absolute;
+  }
+}
+@media only screen and (max-width: 425px) {
+  /* Size semua judul */
+  .judul {
+    font-size: 30px;
+  }
+
+  /* Akhir font sixe semua judul */
+
+  /* Akhir Navbar */
+  #nav {
+    height: 50px;
+    width: auto;
+  }
+
+  #navbarTogglerDemo02 {
+    position: relative;
+    top: 0px;
+    background-color: #222;
+    padding: 0 0 20px 20px;
+  }
+
+  .navbar-brand img {
+    width: 5%;
+    top: 10px;
+    left: 30px;
+    position: absolute;
+  }
+
+  .container-fluid .fas {
+    top: 15px;
+  }
+
+  /* Akhir Navbar */
+
+  .background .judul-konten p {
+    font-size: 9px;
+  }
+}
+/* Akhir Responsive */

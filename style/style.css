@@ -1,0 +1,209 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Navbar */
+.navbar .top {
+  top: 30px;
+}
+
+#nav {
+  height: 90px;
+  z-index: 4;
+  font-size: 16px;
+  padding: 20px;
+  /* color: green; */
+}
+
+#nav.warna {
+  background-color: #222;
+}
+
+#nav.scrolled {
+  background-color: #222 !important;
+  transition: background-color 200ms linear;
+  color: aliceblue;
+}
+
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+.navbar-brand img {
+  width: 3%;
+  top: 20px;
+  left: 100px;
+  position: absolute;
+}
+
+.nav-link.active {
+  border-bottom: #bacb4d solid 2px;
+}
+
+.nav-link {
+  margin-right: 1em !important;
+  color: white;
+}
+
+.nav-link.dropdown {
+  color: white;
+}
+
+.nav-link:hover {
+  background-color: white;
+  color: #222;
+}
+
+.dropdown-menu {
+  background-color: #222;
+}
+
+.dropdown-item {
+  color: white;
+}
+
+.dropdown-item:hover {
+  background-color: white;
+  /* color: white; */
+}
+
+.nav-link.dropdown-toggle {
+  color: white;
+}
+.nav-link.dropdown-toggle:hover {
+  color: #222;
+}
+.dropdown-toggle.show {
+  color: white;
+}
+
+.btn {
+  background-color: #bacb4d;
+  border-radius: 0;
+  font-weight: 500;
+  color: white;
+}
+
+#navbarTogglerDemo02 {
+  /* background-color: #222; */
+  width: 50%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Akhir Navbar */
+
+/* Modal */
+form input {
+  margin: 10px;
+  border: 0;
+  border-bottom: #222 solid 0.5px;
+}
+
+form button {
+  width: 100%;
+  border: 0;
+  height: 40px;
+  background-color: #222;
+  color: white;
+  margin: 20px 0 0 0;
+}
+
+.form-panjang {
+  width: 90%;
+}
+
+.punya-akun:hover {
+  cursor: pointer;
+  color: #666;
+}
+
+/* .modal-dialog {
+    display: block;
+  } */
+
+.modal-content {
+  display: block;
+  border-radius: 0;
+}
+/* Akhir Modal */
+
+/* Footer */
+.page-footer {
+  background-color: #222;
+  color: #ccc;
+  padding: 60px 0 30px;
+}
+.footer-copyright {
+  color: #666;
+  padding: 40px 0;
+}
+
+.program {
+  list-style: none;
+  padding: 0;
+}
+
+.sosial-media {
+  /* border: white solid 2px; */
+  box-sizing: border-box;
+}
+
+.sosial-media ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sosial-media ul li {
+  float: left;
+  font-size: 30px;
+  margin: 15px;
+  list-style: none;
+}
+/* Akhir Footer */
+
+/* Responsive */
+@media only screen and (max-width: 768px) {
+  #nav {
+    background-color: #222;
+    height: 70px;
+  }
+  #navbarTogglerDemo02 {
+    background-color: #222;
+  }
+  .navbar-brand img {
+    width: 5%;
+    top: 15px;
+    left: 30px;
+    position: absolute;
+  }
+
+  .container.about {
+    margin-top: 0px;
+  }
+
+  .foto-about {
+    margin: 40px 0 40px 0;
+  }
+
+  .kelas {
+    padding: -2;
+    transform: scale(0.7);
+    margin: -50px;
+  }
+
+  #daftar-kelas {
+    width: 100%;
+    /* border: black solid 2px; */
+    margin: 0;
+  }
+
+  /* SLideshow */
+  #carouselExampleCaptions {
+    height: auto;
+  }
+  /* Akhir Slideshow */
+}
+/* Akhir Responsive */

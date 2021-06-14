@@ -1,0 +1,651 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Lato:wght@300&display=swap");
+
+/* * {
+  border: orange solid 2px;
+} */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Navbar */
+.navbar .top {
+  top: 0px;
+}
+
+.container-fluid .fas {
+  color: white;
+}
+
+#nav {
+  height: 90px;
+  z-index: 4;
+  font-size: 16px;
+  width: 100%;
+}
+
+#nav.scrolled {
+  background-color: #222 !important;
+  transition: background-color 200ms linear;
+  color: aliceblue;
+}
+
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+.navbar-brand img {
+  width: 3%;
+  top: 20px;
+  left: 100px;
+  position: absolute;
+}
+
+.nav-link.active {
+  border-bottom: #bacb4d solid 2px;
+  color: #bacb4d;
+}
+
+.nav-link {
+  margin-right: 1em !important;
+  color: white;
+  font-weight: bold;
+}
+
+.nav-link.dropdown {
+  color: white;
+}
+
+.nav-link:hover {
+  color: #bacb4d;
+  border-bottom: #bacb4d solid 2px;
+}
+
+.dropdown-menu {
+  background-color: #222;
+}
+
+.dropdown-item {
+  color: white;
+}
+
+.dropdown-item:hover {
+  border-bottom: #bacb4d solid 2px;
+  background-color: rgb(231, 193, 193, 0);
+  color: #bacb4d;
+}
+
+.nav-link.dropdown-toggle {
+  color: white;
+}
+.nav-link.dropdown-toggle:hover {
+  color: #bacb4d;
+}
+.dropdown-toggle.show {
+  color: white;
+}
+
+.btn {
+  background-color: #bacb4d;
+  border-radius: 0;
+  font-weight: 500;
+  color: white;
+  font-weight: bold;
+}
+
+#navbarTogglerDemo02 {
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.nav-item .dropdown-toggle.active {
+  background-color: rgb(255, 255, 255, 0);
+  color: white;
+}
+.dropdown-item.active {
+  background-color: rgb(255, 255, 255, 0);
+  color: white;
+  border-bottom: #bacb4d solid 2px;
+}
+/* Akhir Navbar */
+
+/* Modal */
+form input {
+  margin: 10px;
+  border: 0;
+  border-bottom: #222 solid 0.5px;
+}
+
+form button {
+  width: 100%;
+  border: 0;
+  height: 40px;
+  background-color: #222;
+  color: white;
+  margin: 20px 0 0 0;
+}
+
+.form-panjang {
+  width: 90%;
+}
+
+.punya-akun:hover {
+  cursor: pointer;
+  color: #666;
+}
+
+.modal-content {
+  display: block;
+  border-radius: 0;
+}
+/* Akhir Modal */
+
+/* Slideshow */
+
+#carouselExampleCaptions {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  overflow: hidden;
+}
+
+.carousel {
+  width: 100% !important;
+  overflow: hidden !important;
+  right: 0 !important;
+}
+
+.carousel-caption {
+  right: 0 !important;
+  left: 0 !important;
+}
+
+.carousel-item img {
+  width: 100%;
+}
+
+.carousel-indicators {
+  z-index: 1;
+}
+
+/* Akhir Slide Show */
+
+/* About A&H GYEM */
+.about-gym {
+  margin-top: 100px;
+  color: #222;
+  width: 100%;
+}
+
+.col.about {
+  padding-top: 150px;
+}
+
+.btn.btn-lg {
+  background-color: #222;
+  color: #bacb4d;
+  right: 0;
+  border-radius: 0;
+  border-bottom: solid 1px #bacb4d;
+}
+.btn.btn-lg:hover {
+  color: #222;
+  background-color: #bacb4d;
+}
+
+/* Akhir About A&H GYEM */
+
+/* Kenapa pilih kami */
+.judul {
+  color: #222;
+  font-family: "Bangers", cursive;
+}
+
+.alasan .fas {
+  font-size: 50px;
+  color: #bacb4d;
+}
+
+.alasan h4 {
+  color: #bacb4d;
+}
+/* Akhir Kenapa pilih kami */
+
+/* Kelas Populer */
+.kelas {
+  padding: 0;
+  transform: scale(100%);
+}
+
+.daftar {
+  width: 90%;
+  /* border: black solid 2px; */
+  /* overflow: hidden; */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.kelas #segitiga-bawah {
+  width: auto;
+  height: 0;
+  border-bottom: 130px solid #bacb4d;
+  border-right: 350px solid #bacb4d;
+  clip-path: polygon(0.5% 0, 100% 95%, 100% 100%, 0% 100%);
+  background-color: #bacb4d;
+  bottom: 0;
+  left: 0;
+  opacity: 0.8;
+  transition: 0.5s;
+}
+
+.kelas:hover {
+  cursor: pointer;
+}
+
+.kelas:hover #segitiga-bawah {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.kelas:hover .judul-yoga {
+  height: 100px;
+}
+.position-absolute.judul-yoga {
+  bottom: 10px;
+  color: white;
+  line-height: 10px;
+  /* border: #666 solid 2px; */
+  height: 60px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+/* Akhir Kelas Populer */
+
+/* Progam */
+.container.our-program {
+  position: relative;
+  width: 80%;
+  height: 600px;
+  background-color: pink;
+  background-image: url(https://i.ibb.co/dcq3YN5/cardio5.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container .program {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+}
+
+.container .program.personal-training {
+  clip-path: polygon(0 0, 95% 0, 5% 100%, 0% 100%);
+  /* background-color: palevioletred; */
+  background-image: url(https://i.ibb.co/dcq3YN5/cardio5.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container .program.clubs {
+  clip-path: polygon(94% 0, 100% 0, 100% 100%, 4% 100%);
+  /* background-color: peru; */
+  background-image: url(https://i.ibb.co/jwXBw1V/4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container:hover .program {
+  clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+  cursor: pointer;
+}
+.container .program:hover {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  cursor: pointer;
+  z-index: 2;
+}
+
+.container .program:hover .overlay {
+  opacity: 0.5;
+}
+
+.container .program .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #bacb4d;
+}
+
+.clubs .judul-program {
+  opacity: 1;
+  bottom: 10%;
+  right: 7%;
+  color: white;
+  width: 400px;
+  transition: 0.5s ease;
+}
+.personal-training .judul-program {
+  opacity: 1;
+  top: 10%;
+  left: 7%;
+  color: white;
+  width: 400px;
+  transition: 0.5s ease;
+  font-weight: bold;
+}
+
+.container .program:hover .judul-program {
+  background-color: #222;
+}
+.container .program-kami {
+  background-color: #bacb4d;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: #222 solid 5px;
+  box-shadow: #222 0 0 5px 0.5px;
+}
+
+.container .program-kami .judul-program-kami {
+  color: white;
+  top: 25px;
+  position: absolute;
+  line-height: 20px;
+}
+/* Akhir Program */
+
+/* Pendapat */
+#pendapat {
+  /* background-color: #bacb4d; */
+  box-sizing: border-box;
+}
+
+.lingkaran {
+  background-color: black;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin: 10px 0 0 0;
+  background-size: cover;
+}
+
+.akun {
+  /* border: white solid 2px; */
+  width: 100%;
+}
+.lingkaran.akun1 {
+  background-image: url(https://i.ibb.co/6RGzhrW/eren.jpg);
+}
+.lingkaran.akun2 {
+  background-image: url(https://i.ibb.co/4ggPrSj/mikey.jpg);
+  background-position: 0 0 0 0;
+}
+.lingkaran.akun3 {
+  background-image: url(https://i.ibb.co/RhhdYPY/draken.jpg);
+}
+.lingkaran.akun4 {
+  background-image: url(https://i.ibb.co/54GCHyP/levi.png);
+}
+.lingkaran.akun5 {
+  background-image: url(https://i.ibb.co/wLP8Nwg/mikasa-ackerman-169.jpg);
+}
+
+.gallery-controls-add {
+  display: none;
+}
+
+/* Rating */
+
+.rating h5 {
+  line-height: 0;
+}
+
+.rating ul {
+  list-style: none;
+  padding: 0;
+}
+
+.rating ul li {
+  float: left;
+}
+
+.rating ul li {
+  font-size: 15px;
+  color: white;
+}
+
+.a {
+  border: black solid 1px;
+  width: 100%;
+  padding: 0;
+}
+
+/* Akhir Rating */
+/* Akhir Pendapat */
+
+/* Footer */
+.page-footer {
+  background-color: #222;
+  color: #ccc;
+  padding: 60px 0 30px;
+}
+.footer-copyright {
+  color: #666;
+  padding: 40px 0;
+}
+
+.program {
+  list-style: none;
+  padding: 0;
+}
+
+.sosial-media {
+  /* border: white solid 2px; */
+  box-sizing: border-box;
+}
+
+.sosial-media ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sosial-media ul li a {
+  color: white;
+}
+
+.sosial-media ul li {
+  float: left;
+  font-size: 30px;
+  margin: 15px;
+  list-style: none;
+}
+/* Akhir Footer */
+
+/* Responsive */
+@media only screen and (max-width: 767px) {
+  #nav {
+    height: 70px;
+  }
+
+  #navbarTogglerDemo02 {
+    position: relative;
+    top: 30px;
+    background-color: #222;
+    padding: 0 0 20px 20px;
+  }
+
+  .navbar-brand img {
+    width: 5%;
+    top: 15px;
+    left: 30px;
+    position: absolute;
+  }
+
+  .container.about {
+    margin-top: 0px;
+  }
+
+  /* About A&H GYM */
+  .about-gym {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    text-align: center;
+    margin-left: 0.5%;
+  }
+  .foto {
+    width: 100%;
+    padding-left: 15%;
+  }
+
+  .col.about {
+    padding-top: 0px;
+  }
+  /* Akhir About A&H GYEM */
+
+  .kelas {
+    padding: -2;
+    transform: scale(0.7);
+    margin: 10px;
+  }
+
+  #daftar-kelas {
+    width: 100%;
+    /* border: black solid 2px; */
+    margin: 0;
+  }
+
+  /* SLideshow */
+  #carouselExampleCaptions {
+    height: auto;
+  }
+  /* Akhir Slideshow */
+}
+@media only screen and (max-width: 552px) {
+  .judul-konten h1 {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  /* Size semua judul */
+  .judul {
+    font-size: 30px;
+  }
+
+  /* Akhir font sixe semua judul */
+
+  /* Akhir Navbar */
+  #nav {
+    height: 50px;
+    width: auto;
+  }
+
+  #navbarTogglerDemo02 {
+    position: relative;
+    top: 0px;
+    background-color: #222;
+    padding: 0 0 20px 20px;
+  }
+
+  .navbar-brand img {
+    width: 5%;
+    top: 10px;
+    left: 30px;
+    position: absolute;
+  }
+
+  .container-fluid .fas {
+    top: 15px;
+  }
+
+  /* Akhir Navbar */
+
+  /* About A&H GYM */
+  .about-gym {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    text-align: center;
+    margin-left: 0.5%;
+  }
+  .foto {
+    width: 100%;
+    padding-left: 15%;
+  }
+
+  .col.about {
+    padding-top: 0px;
+  }
+  /* Akhir About A&H GYEM */
+
+  /* Program Kami */
+  .judul-program h1 {
+    font-size: 30px;
+  }
+
+  .personal-training .judul-program {
+    left: -15%;
+  }
+  /* Akhir Program kami */
+
+  /* Pendapat */
+  #pendapat {
+    /* background-color: #bacb4d; */
+    box-sizing: border-box;
+  }
+
+  .lingkaran {
+    background-color: black;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: 10px 0 0 0;
+    background-size: cover;
+  }
+
+  .gallery-container .gallery-item {
+    width: 250px;
+    height: 250px;
+    font-size: 15px;
+  }
+
+  /* Rating */
+
+  .rating h5 {
+    line-height: 0;
+  }
+
+  .rating ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .rating ul li {
+    float: left;
+  }
+
+  .rating ul li {
+    font-size: 15px;
+    color: white;
+  }
+
+  .a {
+    border: black solid 1px;
+    width: 100%;
+    padding: 0;
+  }
+
+  /* Akhir Rating */
+  /* Akhir Pendapat */
+
+  /* Akhir Pendapat */
+}
+/* Akhir Responsive */
